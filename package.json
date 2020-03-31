@@ -1,0 +1,26 @@
+{
+  "name": "codeiiest",
+  "version": "1.0.0",
+  "description": "Website for codeIIEST",
+  "author": "Dwaipayan Ray",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/bulma": "^1.2.1",
+    "buefy": "^0.8.13",
+    "bulma": "^0.8.1",
+    "cross-env": "^5.2.0",
+    "epic-spinners": "^1.1.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.0.0",
+    "nuxt-buefy": "^0.3.24"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
