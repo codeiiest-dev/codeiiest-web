@@ -36,15 +36,41 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {
-      src: '~plugins/font-awesome.js', ssr: false
-    },
   ],
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-  ],
+ buildModules: [
+  [
+    'nuxt-fontawesome',
+    {
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: [
+            'faEnvelope',
+            'faSearch',
+            'faUser',
+            'faKey',
+            'faCode',
+            'faRobot',
+            'faUserSecret'
+          ]
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: [
+            'faFacebook',
+            'faGithub',
+            'faHtml5',
+            'faAndroid',
+            'faLinkedin'
+          ]
+        }
+      ]
+    }
+  ]
+],
   /*
   ** Nuxt.js modules
   */
