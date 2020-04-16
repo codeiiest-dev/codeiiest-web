@@ -1,9 +1,15 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/codeiiest/'
+  }
+} : {}
 
 module.exports = {
   mode: 'universal',
   /*
   ** Headers of the page
   */
+ ...routerBase,
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -23,11 +29,16 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~/assets/bulma.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {
+      src: '~plugins/font-awesome.js', ssr: false
+    },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -39,7 +50,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
+    'nuxt-buefy',
   ],
   /*
   ** Build configuration

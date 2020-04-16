@@ -5,22 +5,32 @@
   "author": "Dwaipayan Ray",
   "private": true,
   "scripts": {
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxtjs/bulma": "^1.2.1",
     "buefy": "^0.8.13",
-    "bulma": "^0.8.1",
+    "bulma": "^0.8.2",
     "cross-env": "^5.2.0",
     "epic-spinners": "^1.1.0",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.24"
+    "nuxt-buefy": "^0.3.26"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "node-sass": "^4.13.1",
+    "nodemon": "^1.18.9",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^8.0.2"
   }
 }

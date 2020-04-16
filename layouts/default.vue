@@ -1,9 +1,22 @@
 <template>
   <div>
+    <Navbar />
     <nuxt />
+    <Footer />
   </div>
 </template>
 
+<script>
+import Navbar from '~/components/base/Navbar.vue'
+import Footer from '~/components/base/Footer.vue'
+export default {
+  components:{
+    Navbar,
+    Footer
+  }
+  
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

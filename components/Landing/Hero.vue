@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="hero is-primary is-fullheight">
+        <section class="hero is-dark">
             <div class="hero-body">
                 <div class="container">
                 <h1 class="title is-size-3 has-text-centered">
@@ -19,7 +19,7 @@
 export default{
     data(){
         return{
-            title:"CodeIIEST",
+            title:"Who are We?",
             subtitle:"The best club in the world."
         }
     }

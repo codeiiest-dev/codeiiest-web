@@ -1,0 +1,31 @@
+@import '~bulma/sass/utilities/_all';
+
+@font-face {
+  font-family: 'MyriadProBlack';
+  src: url('./myriadproblack.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('./myriadpro.woff2') format('woff2');
+}
+
+$header-font: 'MyriadProBlack';
+$content-font: 'MyriadPro';
+
+h3,p
+{
+  font-family: $content-font;
+}
+
+h1,h2{
+    font-family: $header-font;
+}
+
+$body-family: $content-font;
+
+$column-gap: 1.6rem;
+$navbar-height: 4.75rem;
+
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
