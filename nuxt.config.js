@@ -2,7 +2,8 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/codeiiest/'
   }
-} : {}
+} : {
+}
 
 module.exports = {
   mode: 'universal',
@@ -24,7 +25,9 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  //loading: { color: '#fff' },
+  loading: '~/components/base/Spinner.vue',
+
   /*
   ** Global CSS
   */
