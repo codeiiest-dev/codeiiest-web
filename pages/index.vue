@@ -16,6 +16,7 @@ export default {
     Hero,
     Chapters
   },
+  loading:false,
   mounted () {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()

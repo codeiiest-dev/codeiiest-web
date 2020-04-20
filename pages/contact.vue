@@ -104,6 +104,7 @@ export default {
 
         }
     },
+    loading:false,
     mounted () {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
