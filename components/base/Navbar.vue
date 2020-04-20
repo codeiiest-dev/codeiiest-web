@@ -1,5 +1,5 @@
 <template>
-  <b-navbar :fixed-top=true :transparent=true :spaced=true class="is-dark">
+  <b-navbar :fixed-top=true :transparent=true class="is-dark nav">
     <template slot="brand">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <h2 class="title is-size-4 has-text-light">CodeIIEST</h2>
@@ -55,5 +55,9 @@ export default {
 </script>
 
 <style scoped>
-
+@media only screen and (min-width: 768px) {
+ .nav{
+  padding: 0.2rem 2rem;
+}
+}
 </style>
