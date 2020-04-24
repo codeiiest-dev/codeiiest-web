@@ -48,6 +48,8 @@
 <style scoped>
 .card {
   min-height: 180px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 </style>
