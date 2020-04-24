@@ -2,7 +2,7 @@
   "name": "codeiiest",
   "version": "1.0.0",
   "description": "Website for codeIIEST",
-  "author": "Dwaipayan Ray",
+  "author": "Dwaipayan Ray, Shivam Singh",
   "private": true,
   "scripts": {
     "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
@@ -14,10 +14,6 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxtjs/bulma": "^1.2.1",
     "buefy": "^0.8.13",
     "bulma": "^0.8.2",
@@ -25,13 +21,18 @@
     "epic-spinners": "^1.1.0",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.26",
-    "nuxt-fontawesome": "^0.4.0"
+    "nuxt-buefy": "^0.3.26"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
     "nodemon": "^1.18.9",
     "push-dir": "^0.4.1",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-particles": "^1.0.9",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "nuxt-fontawesome": "^0.4.0"
   }
 }

@@ -63,10 +63,10 @@ export default {
           icon: ["fas", "code"]
         },
         {
-          header: "Machine Learning",
+          header: "Security",
           subheader:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
-          icon: ["fas", "robot"]
+          icon: ["fas", "user-secret"]
         },
         {
           header: "Web Development",
@@ -77,17 +77,17 @@ export default {
       ],
       row2: [
         {
+          header: "Machine Learning",
+          subheader:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
+          icon: ["fas", "robot"]
+        },
+        {
           header: "Development",
           subheader:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
           icon: ["fab", "android"]
         },
-        {
-          header: "Security",
-          subheader:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
-          icon: ["fas", "user-secret"]
-        }
       ]
     };
   }
