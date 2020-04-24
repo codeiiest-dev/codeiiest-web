@@ -1,6 +1,7 @@
 <template>
   <div class="hero is-centered has-text-centered is-vcentered">
     <div id="app">
+      <no-ssr>
       <vue-particles
         color="#dedede"
         :particleOpacity="0.7"
@@ -19,6 +20,7 @@
         clickMode="push"
       >
       </vue-particles>
+      </no-ssr>
       <h1 class="is-size-1 has-text-white logo">Code IIEST</h1>
       <p class="is-size-4 has-text-white has-text-centered">Imagination unleashed</p>
     </div>
@@ -27,7 +29,7 @@
 
 <style scoped>
 .logo{
-    margin-top: 38vh;
+    margin-top: 35vh;
 }
 #particles-js {
   position: absolute;
