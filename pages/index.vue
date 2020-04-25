@@ -18,7 +18,7 @@ export default {
     Chapters
   },
   loading:false,
-  mounted () {
+  beforeMount () {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
 

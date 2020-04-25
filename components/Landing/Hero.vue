@@ -5,7 +5,7 @@
       <vue-particles
         color="#dedede"
         :particleOpacity="0.7"
-        :particlesNumber="80"
+        :particlesNumber="120"
         shapeType="circle"
         :particleSize="4"
         linesColor="#dedede"
@@ -22,14 +22,20 @@
       </vue-particles>
       </no-ssr>
       <h1 class="is-size-1 has-text-white logo">Code IIEST</h1>
-      <p class="is-size-4 has-text-white has-text-centered">Imagination unleashed</p>
+      <p class="is-size-4 has-text-white has-text-centered">Learn, Develop, Compete</p>
     </div>
   </div>
 </template>
 
 <style scoped>
 .logo{
-    margin-top: 35vh;
+    margin-top: 38vh;
+}
+
+@media screen and (max-width: 768px){
+  .logo{
+    margin-top: 30vh;
+  }
 }
 #particles-js {
   position: absolute;

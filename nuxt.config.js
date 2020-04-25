@@ -73,6 +73,26 @@ module.exports = {
         }
       ]
     }
+  ],
+  [
+    '@nuxtjs/firebase',
+    {
+      config: {
+        apiKey: "AIzaSyBifvNEDZkYp_rN5fKAnozQvwfKibhHSKo",
+        authDomain: "codeiiest-e1578.firebaseapp.com",
+        databaseURL: "https://codeiiest-e1578.firebaseio.com",
+        projectId: "codeiiest-e1578",
+        storageBucket: "codeiiest-e1578.appspot.com",
+        messagingSenderId: "128931784454",
+        appId: "1:128931784454:web:ee274377ea49a0f532a087",
+        measurementId: "G-XQTE56BH99"
+      },
+      services: {
+        auth: true,
+        firestore: true,  
+        //analytics: true
+      }
+    }
   ]
 ],
   /*
@@ -82,6 +102,13 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     'nuxt-buefy',
   ],
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
   /*
   ** Build configuration
   */
