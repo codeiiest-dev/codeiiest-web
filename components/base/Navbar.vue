@@ -37,6 +37,8 @@
 </template>
 
 <script>
+import LoginCard from '~/components/authentication/LoginCard.vue';
+
 export default {
   data(){
     return{
@@ -45,7 +47,12 @@ export default {
   },
   methods:{
     handleLogin(){
-
+      this.$buefy.modal.open({
+        parent: this,
+        component: LoginCard,
+        hasModalCard: true,
+        trapFocus: true
+      })
     },
     handleSignUp(){
 

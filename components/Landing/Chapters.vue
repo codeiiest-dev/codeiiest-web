@@ -50,8 +50,8 @@
   min-height: 180px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background-color: #ade9ec;
-  box-shadow: 5px 5px 10px #888888;
+  background-color: rgba(43, 32, 53, 0.083);
+  box-shadow: 2px 2px 5px #888888;
 }
 
 </style>
