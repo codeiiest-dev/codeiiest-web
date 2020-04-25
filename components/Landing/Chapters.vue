@@ -35,7 +35,7 @@
             <h1 class="title is-size-4 has-text-centered">
               {{ item.header }}
             </h1>
-            <p class="subtitle has-text-centered">
+            <p class="subtitle has-text-centered text-primary">
               {{ item.subheader }}
             </p>
           </div>
@@ -48,6 +48,10 @@
 <style scoped>
 .card {
   min-height: 180px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #ade9ec;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 </style>
