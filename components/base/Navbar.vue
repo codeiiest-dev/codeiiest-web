@@ -63,12 +63,12 @@ export default {
 
 <style scoped>
 nav.navbar.is-fixed-top {
-  background: rgba(24,24,24,0.99);;
+  background: rgba(24,24,24,0.99);
 }
 
 @media only screen and (min-width: 768px) {
  .nav{
-  padding: 0.2rem 2rem;
-}
+    padding: 0.2rem 2rem;
+  }
 }
 </style>

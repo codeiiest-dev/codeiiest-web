@@ -1,5 +1,5 @@
 <template>
-  <div class="hero is-centered has-text-centered is-vcentered">
+  <div class="hero is-centered has-text-centered is-vcentered has-background-black">
     <div id="app">
       <no-ssr>
       <vue-particles
@@ -51,5 +51,6 @@
 #app {
   background: rgba(24, 24, 24, 0.99);
   height:100vh;
+  width: 100vw;
 }
 </style>
