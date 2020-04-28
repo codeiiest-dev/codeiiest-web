@@ -25,9 +25,6 @@
                 </div>
                 <div class="column is-3">
                     <div class="container">
-                        <p class="is-size-3 has-text-weight-bold has-text-centered has-text-white">
-                            Social Links:
-                        </p>
                         <div class="level">
                             <div class="level-item" v-for="(item,index) in sociallinks" :key="index">
                                 <a :href="item.link">
