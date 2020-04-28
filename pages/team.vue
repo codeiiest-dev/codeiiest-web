@@ -12,9 +12,9 @@
         </div>
         <div class="hero has-background-dark">
             <div class="hero-body container">
-                <div class="tile is-ancestor center">
-                    <div v-for="(item,index) in team" :key="index" class="tile is-4 is-vertical is-parent has-background-dark">
-                        <div class="tile is-child box">
+                <div class="columns is-centered">
+                    <div v-for="(item,index) in team" :key="index" class="column is-4 has-background-dark">
+                        <div class="box">
                             <figure class="image">
                                 <img :src="item.url">
                             </figure>
@@ -69,9 +69,5 @@ img {
     width: 100%;
     max-height: 15rem;
 }
-.center{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
+
 </style>
