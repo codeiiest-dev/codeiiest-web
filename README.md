@@ -2,6 +2,12 @@
 
 > Website for codeIIEST
 
+## Things to do
+* Add content to each of the chapters
+* Complete Sign up Logic
+* Link APIs
+
+
 ## Build Setup
 
 ```bash
