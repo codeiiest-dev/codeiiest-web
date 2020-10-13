@@ -2,10 +2,11 @@
     <div class="hero is-dark is-fullheight">
         <div class="container section">
             <div class="container">
+                <h2 class="has-text-centered"> About  <span class="headtext">CodeIIEST </span></h2>
                 <h1 class="is-size-2 has-text-centered">
-                    Want to know about us?
+                     Who we are.
                 </h1>
-                <p class="is-size-5 js">
+                <p class="js">
                     {{ about }}
                 </p>    
             </div>
@@ -18,15 +19,28 @@
 export default {
     data(){
         return{
-            about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non recusandae nobis saepe magnam voluptatem sapiente rem quisquam dolorem, ullam eos dolorum eaque aperiam, reprehenderit ad. Eius animi dignissimos cupiditate tempore nesciunt molestiae fugiat eligendi voluptas! Sed fugit quis magnam nobis quaerat ab ad amet ea accusamus libero. Autem natus perspiciatis voluptatum repellat non! Dolor dignissimos ab repellendus, iure totam blanditiis incidunt, aspernatur optio nobis temporibus debitis deleniti quibusdam voluptate natus velit tempore quidem alias, vero similique perferendis beatae? Rerum necessitatibus repellat quis! Impedit, corporis sit iste neque quo placeat adipisci, error sapiente rerum ipsum ducimus similique quia ipsam libero'
+            about: 'CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in November, 2014 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them strengthen their skills and enhance creativity and innovation.'
         }
     }
 }
 </script>
 
 <style scoped>
+.is-size-2{
+    color: lightyellow;
+    margin-bottom: 1rem;
+}
 .js{
-    text-align: justify;
-    text-justify: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2;
+    max-width: 38em;
+    margin: auto;
+    padding: 13px;
+}
+.headtext{
+    color: red;
+    font-size: 1.2rem;
+    border-bottom: 2px solid currentColor;
 }
 </style>
