@@ -36,8 +36,6 @@ export default {
     line-height: 2;
     max-width: 38em;
     margin: auto;
-    /* color: #4a4a4a;
-    background-color: #f9f9f9; */
     padding: 13px;
 }
 .headtext{
@@ -45,5 +43,4 @@ export default {
     font-size: 1.2rem;
     border-bottom: 2px solid currentColor;
 }
-
 </style>
