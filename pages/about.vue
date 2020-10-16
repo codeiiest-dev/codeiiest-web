@@ -19,7 +19,7 @@
 export default {
     data(){
         return{
-            about: 'CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in November, 2014 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them strengthen their skills and enhance creativity and innovation.'
+            about: 'CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in November, 2014 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them enhance and brush up their skills and enhance creativity and innovation.'
         }
     }
 }
