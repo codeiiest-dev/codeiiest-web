@@ -38,9 +38,10 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-   { src: '~/plugins/particles.js', ssr: false},
-  ],
+ plugins: [
+  { src: '~/plugins/particles.js', ssr: false},
+  { src: '~/plugins/vue-cookies.js', ssr: false},
+ ],
   /*
   ** Nuxt.js dev-modules
   */
