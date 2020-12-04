@@ -13,60 +13,60 @@
 $header-font: 'MyriadProBlack';
 $content-font: 'MyriadPro';
 
-h3,p
-{
+h3,
+p {
   font-family: $content-font;
 }
 
-h1,h2{
-    font-family: $header-font;
+h1,
+h2 {
+  font-family: $header-font;
 }
 
 $body-family: $content-font;
-$loading-background: rgba(24,24,24,0.99);
+$loading-background: rgba(24, 24, 24, 0.99);
 $column-gap: 1.6rem;
 $navbar-height: 4.25rem;
 
-$dark: rgba(24,24,24,0.99);
+$dark: rgba(24, 24, 24, 0.99);
 $colors: (
   'white': (
     $white,
-    $black
+    $black,
   ),
   'black': (
     $black,
-    $white
+    $white,
   ),
   'light': (
     $light,
-    $light-invert
+    $light-invert,
   ),
   'dark': (
     $dark,
-    $dark-invert
+    $dark-invert,
   ),
   'primary': (
     $primary,
-    $primary-invert
+    $primary-invert,
   ),
   'info': (
     $info,
-    $info-invert
+    $info-invert,
   ),
   'success': (
     $success,
-    $success-invert
+    $success-invert,
   ),
   'warning': (
     $warning,
-    $warning-invert
+    $warning-invert,
   ),
   'danger': (
     $danger,
-    $danger-invert
-  )
+    $danger-invert,
+  ),
 );
-
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';

@@ -15,20 +15,18 @@ export default {
   components: {
     Hero,
     Description,
-    Chapters
+    Chapters,
   },
-  mounted () {
-    if(!this.$cookies.get("visit")) {
+  mounted() {
+    if (!this.$cookies.get('visit')) {
       this.$nextTick(() => {
         this.$nuxt.$loading.start()
         setTimeout(() => this.$nuxt.$loading.finish(), 2000)
       })
-      this.$cookies.set("visit", 1, 0)
+      this.$cookies.set('visit', 1, 0)
     }
-  }
-  
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>

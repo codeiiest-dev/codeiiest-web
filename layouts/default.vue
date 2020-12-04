@@ -10,9 +10,9 @@
 import Navbar from '~/components/base/Navbar.vue'
 import Footer from '~/components/base/Footer.vue'
 export default {
-  components:{
+  components: {
     Navbar,
-    Footer
+    Footer,
   },
 }
 </script>
@@ -64,5 +64,4 @@ html {
   color: #fff;
   background-color: #35495e;
 }
-
 </style>

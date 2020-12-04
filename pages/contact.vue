@@ -2,9 +2,7 @@
   <div>
     <div class="section">
       <div class="container">
-        <h1 class="is-size-2 has-text-centered">
-          How to reach us?
-        </h1>
+        <h1 class="is-size-2 has-text-centered">How to reach us?</h1>
         <div class="columns is-centered">
           <div class="column is-4">
             <div class="box">
@@ -42,13 +40,25 @@
               </b-field>
 
               <b-field label="Email">
-                <b-input type="email" value="email" placeholder="Your email" v-model="email" maxlength="30"> </b-input>
+                <b-input
+                  v-model="email"
+                  type="email"
+                  value="email"
+                  placeholder="Your email"
+                  maxlength="30"
+                >
+                </b-input>
               </b-field>
 
               <b-field label="Message">
-                <b-input maxlength="200" v-model="message" placeholder="Type your query here..." type="textarea"></b-input>
+                <b-input
+                  v-model="message"
+                  maxlength="200"
+                  placeholder="Type your query here..."
+                  type="textarea"
+                ></b-input>
               </b-field>
-              <button class="button is-link"> Submit </button>
+              <button class="button is-link">Submit</button>
             </div>
           </div>
         </div>
@@ -62,34 +72,34 @@ export default {
   data() {
     return {
       address: {
-        title: "Address",
-        content: "IIEST Shibpur, Howrah 711103, West Bengal"
+        title: 'Address',
+        content: 'IIEST Shibpur, Howrah 711103, West Bengal',
       },
       mail: {
-        title: "Email",
-        content: "codeiiest@gmail.com"
+        title: 'Email',
+        content: 'codeiiest@gmail.com',
       },
 
-      name: "",
-      email: "",
-      message: ""
-    };
+      name: '',
+      email: '',
+      message: '',
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 2000)
+    })
   },
   methods: {
     validemail() {
-      return false;
+      return false
     },
-    submit() {}
+    submit() {},
   },
   loading: false,
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-
-      setTimeout(() => this.$nuxt.$loading.finish(), 2000);
-    });
-  }
-};
+}
 </script>
 
 <style scoped>

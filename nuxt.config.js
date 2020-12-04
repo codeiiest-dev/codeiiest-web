@@ -1,130 +1,62 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/codeiiest/'
-  }
-} : {
-}
-
-module.exports = {
-  mode: 'universal',
-  /*
-  ** Headers of the page
-  */
- ...routerBase,
+export default {
+  // router: {
+  //   base: '/codeiiest-web/',
+  // },
+  ssr: false,
+  // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'CodeIIEST',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
-  /*
-  ** Customize the progress-bar color
-  */
-  //loading: { color: '#fff' },
-  loading: '~/components/base/Spinner.vue',
 
-  /*
-  ** Global CSS
-  */
-  css: [
-    '~/assets/bulma.scss',
-    '@fortawesome/fontawesome-svg-core/styles.css'
+  // Global CSS (https://go.nuxtjs.dev/config-css)
+  css: ['@/assets/bulma.scss'],
+
+  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  plugins: [
+    { src: '~/plugins/particles.js', mode: 'client' },
+    { src: '~/plugins/vue-cookies.js', mode: 'client' },
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
- plugins: [
-  { src: '~/plugins/particles.js', ssr: false},
-  { src: '~/plugins/vue-cookies.js', ssr: false},
- ],
-  /*
-  ** Nuxt.js dev-modules
-  */
- buildModules: [
-  [
-    'nuxt-fontawesome',
-    {
-      imports: [
-        {
-          set: '@fortawesome/free-solid-svg-icons',
-          icons: [
-            'faEnvelope',
-            'faSearch',
-            'faUser',
-            'faKey',
-            'faCode',
-            'faRobot',
-            'faUserSecret'
-          ]
-        },
-        {
-          set: '@fortawesome/free-brands-svg-icons',
-          icons: [
-            'faFacebook',
-            'faGithub',
-            'faHtml5',
-            'faAndroid',
-            'faLinkedin'
-          ]
-        }
-      ]
-    }
+
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
+
+  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+  buildModules: [
+    '@nuxtjs/fontawesome',
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
   ],
-  [
-    '@nuxtjs/firebase',
-    {
-      config: {
-        apiKey: "AIzaSyBifvNEDZkYp_rN5fKAnozQvwfKibhHSKo",
-        authDomain: "codeiiest-e1578.firebaseapp.com",
-        databaseURL: "https://codeiiest-e1578.firebaseio.com",
-        projectId: "codeiiest-e1578",
-        storageBucket: "codeiiest-e1578.appspot.com",
-        messagingSenderId: "128931784454",
-        appId: "1:128931784454:web:ee274377ea49a0f532a087",
-        measurementId: "G-XQTE56BH99"
-      },
-      services: {
-        auth: true,
-        firestore: true,  
-        //analytics: true
-      }
-    }
-  ]
-],
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    'nuxt-buefy',
-  ],
-  render: {
-    bundleRenderer: {
-      shouldPreload: (file, type) => {
-        return ['script', 'style', 'font'].includes(type)
-      }
-    }
-  },
-  /*
-  ** Build configuration
-  */
-  build: {
-    postcss: {
-      preset: {
-        features: {
-          customProperties: false
-        }
-      }
+  fontawesome: {
+    icons: {
+      brands: ['faFacebook', 'faGithub', 'faLinkedin', 'faAndroid'],
+      solid: ['faHome', 'faCog', 'faRobot', 'faCode', 'faUserSecret'],
+      // regular: ['faAdjust'],
     },
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  }
+  },
+  // Modules (https://go.nuxtjs.dev/config-modules)
+  modules: [
+    // https://go.nuxtjs.dev/buefy
+    'nuxt-buefy',
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+    // https://go.nuxtjs.dev/content
+    '@nuxt/content',
+  ],
+
+  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
+  axios: {},
+
+  // Content module configuration (https://go.nuxtjs.dev/config-content)
+  content: {},
+
+  // Build Configuration (https://go.nuxtjs.dev/config-build)
+  build: {},
 }

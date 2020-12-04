@@ -17,13 +17,9 @@
         {{ message }}
       </div>
       <p v-if="statusCode === 404" class="description">
-        <NuxtLink class="error-link" to="/">
-          Return Home
-        </NuxtLink>
+        <NuxtLink class="error-link" to="/"> Return Home </NuxtLink>
       </p>
-      <p v-else class="description">
-        An unfortunate error has occured
-      </p>
+      <p v-else class="description">An unfortunate error has occured</p>
     </div>
   </div>
 </template>
@@ -35,8 +31,8 @@ export default {
   props: {
     error: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
   computed: {
     statusCode() {
@@ -44,7 +40,7 @@ export default {
     },
     message() {
       return this.error.message || '<%= messages.client_error %>'
-    }
+    },
   },
   head() {
     return {
@@ -53,11 +49,11 @@ export default {
         {
           name: 'viewport',
           content:
-            'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
-        }
-      ]
+            'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

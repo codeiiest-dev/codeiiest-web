@@ -1,7 +1,7 @@
 <template>
   <div class="section container">
     <div class="columns is-centered">
-      <div class="column is-4" v-for="(item, index) in row1" :key="index">
+      <div v-for="(item, index) in row1" :key="index" class="column is-4">
         <div class="card">
           <div class="card-content">
             <div class="level">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="columns is-centered">
-      <div class="column is-4" v-for="(item, index) in row2" :key="index">
+      <div v-for="(item, index) in row2" :key="index" class="column is-4">
         <div class="card">
           <div class="card-content">
             <div class="level">
@@ -53,7 +53,6 @@
   background-color: rgba(43, 32, 53, 0.083);
   box-shadow: 2px 2px 5px #888888;
 }
-
 </style>
 <script>
 export default {
@@ -61,39 +60,29 @@ export default {
     return {
       row1: [
         {
-          header: "Competitive Programming",
-          subheader:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
-          icon: ["fas", "code"]
+          header: 'Competitive Programming',
+          subheader: 'The art of problem solving',
+          icon: ['fas', 'code'],
         },
         {
-          header: "Security",
-          subheader:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
-          icon: ["fas", "user-secret"]
+          header: 'Security',
+          subheader: "It's not all l33t hax0r",
+          icon: ['fas', 'user-secret'],
         },
-        {
-          header: "Web Development",
-          subheader:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
-          icon: ["fab", "html5"]
-        }
       ],
       row2: [
         {
-          header: "Machine Learning",
-          subheader:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
-          icon: ["fas", "robot"]
+          header: 'Machine Learning',
+          subheader: 'Trying to take away the jobs of the other three',
+          icon: ['fas', 'robot'],
         },
         {
-          header: "Development",
-          subheader:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum.",
-          icon: ["fab", "android"]
+          header: 'Open Source & Development',
+          subheader: 'The art of writing and documenting readable code',
+          icon: ['fab', 'android'],
         },
-      ]
-    };
-  }
-};
+      ],
+    }
+  },
+}
 </script>
