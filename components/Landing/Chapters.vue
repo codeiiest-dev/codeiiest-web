@@ -2,7 +2,7 @@
   <div class="section container">
     <div class="columns is-centered">
       <div v-for="(item, index) in row1" :key="index" class="column is-4">
-        <div class="card">
+        <div class="card is-fullheight">
           <div class="card-content">
             <div class="level">
               <div class="level-item">
@@ -47,6 +47,7 @@
 
 <style scoped>
 .card {
+  height: 100%;
   min-height: 180px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
