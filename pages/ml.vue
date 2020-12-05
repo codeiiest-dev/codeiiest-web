@@ -22,51 +22,28 @@
           click-mode="push"
         >
         </vue-particles>
-        <h1 class="is-size-1 has-text-white logo">Machine Learning</h1>
+        <!-- <h1 class="is-size-1 has-text-white logo">Machine Learning</h1>
         <p class="is-size-4 has-text-white has-text-centered pt-5">
           “Is artificial intelligence less than our intelligence?” —Spike Jonze
-        </p>
-        <!-- <p class="has-text-white">abc</p> -->
+        </p> -->
+        <div class="container has-text-white logo">
+          <h1 class="reveal-wrap mb-4">
+            <span id="text-reveal" class="big-text">Machine Learning</span>
+          </h1>
+          <div class="reveal-div">
+            <h1 class="reveal-wrap-1">
+              <span id="text-reveal-1" class="small-text-1"
+                >“Is artificial intelligence less than our intelligence?” —Spike
+                Jonze</span
+              >
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
+
     <section class="hero">
       <div class="hero-body">
-        <!-- <div class="columns xx">
-            <div class="column is-8 is-offset-2">
-              <figure class="image">
-                <video
-                  src="/hacking.mp4"
-                  alt="hacking image"
-                  autoplay
-                  loop
-                  type="video/mp4"
-                />
-              </figure>
-            </div>
-          </div> -->
-
-        <!-- <section class="section is-dark">
-            <div class="columns">
-              <div class="column is-8 is-offset-2">
-                <div class="content is-medium">
-                  <h2 class="subtitle is-4">
-                    The InfoSec chapter of CodeIIEST
-                  </h2>
-                  <h1 class="title">Welcome to d4rks0c13ty!</h1>
-                  <p>
-                    A <i>Hacker</i> is someone who makes things. In this
-                    context, it’s someone who makes things by programming
-                    computers. This is the original, and purest definition of
-                    the term, i.e., that you have an idea and you “hack”
-                    something together to make it work.
-                    <br />
-                    It's not always cracking passwords or finding bugs in a
-                    system. Wire your brain accordingly.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section> -->
         <div class="container">
           <div class="columns">
             <div class="column is-desktop is-two-fifths">
@@ -162,9 +139,76 @@ export default {
       ],
     }
   },
+  mounted() {
+    window.setTimeout(() => {
+      document.getElementById('text-reveal').style.transform = 'translate(0, 0)'
+    }, 1500)
+    window.setTimeout(() => {
+      document.getElementById('text-reveal-1').style.transform =
+        'translate(0, 0)'
+    }, 2500)
+  },
 }
 </script>
 <style scoped>
+.container {
+  padding: 100px 20px 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.reveal-div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.reveal-wrap {
+  margin: 0;
+  text-align: center;
+  font-size: 60px;
+  overflow: hidden;
+  line-height: 1;
+}
+.reveal-wrap-1 {
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+  line-height: 1;
+}
+.small-text-1 {
+  display: block;
+  transform: translate(0, -100%);
+  animation: reveal2 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  animation-delay: 1.5s;
+}
+
+.big-text {
+  display: block;
+  color: white;
+  transform: translate(0, 100%);
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes reveal2 {
+  0% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .logo {
   margin-top: 25vh;
 }
