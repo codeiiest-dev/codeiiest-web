@@ -4,26 +4,11 @@
       class="hero is-centered has-text-centered is-vcentered has-background-black"
     >
       <div id="app">
-        <vue-particles
-          color="#228B22"
-          :particle-opacity="1"
-          :particles-number="75"
-          shape-type="circle"
-          :particle-size="3"
-          lines-color="#228B22"
-          :lines-width="1"
-          :line-linked="true"
-          :line-opacity="0.75"
-          :lines-distance="200"
-          :move-speed="7"
-          :hover-effect="true"
-          hover-mode="grab"
-          :click-effect="true"
-          click-mode="push"
-        >
-        </vue-particles>
-        <h1 class="is-size-1 has-text-white logo">d4rks0c13ty</h1>
-        <p class="is-size-4 has-text-white has-text-centered pt-5">
+        <figure class="image">
+          <video src="" alt="hacking image" autoplay loop type="video/mp4" />
+        </figure>
+        <h1 class="toptext is-size-1 has-text-white logo glow">d4rks0c13ty</h1>
+        <p class="toptext is-size-4 has-text-white has-text-centered pt-5">
           Exploit, Pwn, Hack
         </p>
       </div>
@@ -52,8 +37,8 @@
                   <h2 class="subtitle is-4">
                     The InfoSec chapter of CodeIIEST
                   </h2>
-                  <h1 class="title">Welcome to d4rks0c13ty!</h1>
-                  <p>
+                  <h1 class="title toptext">Welcome to d4rks0c13ty!</h1>
+                  <p class="is-family-monospace">
                     A <i>Hacker</i> is someone who makes things. In this
                     context, it’s someone who makes things by programming
                     computers. This is the original, and purest definition of
@@ -85,7 +70,7 @@
               </figure>
             </div>
             <div class="column is-6 is-offset-1">
-              <h1 class="title is-2">PicoCTF 2018</h1>
+              <h1 class="title is-2 toptext">PicoCTF 2018</h1>
               <h2 class="subtitle is-4">
                 252nd Position Globally, with 12710 points
               </h2>
@@ -103,8 +88,16 @@ export default {}
 </script>
 
 <style scoped>
+@font-face {
+  font-family: Hacked;
+  src: url(https://hackedfont.com/HACKED.ttf);
+}
+.toptext {
+  font-family: Hacked;
+}
 .logo {
   margin-top: 25vh;
+  font-size: 6rem !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -127,5 +120,22 @@ export default {}
   background: rgba(24, 24, 24, 0.99);
   height: 100vh;
   width: 100vw;
+}
+.glow {
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4f5f8,
+      0 0 40px #00e64d, 0 0 50px #00e686;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #60f699, 0 0 40px #60f699,
+      0 0 50px #60f699, 0 0 60px #60f699;
+  }
 }
 </style>
