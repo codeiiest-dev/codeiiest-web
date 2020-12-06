@@ -13,7 +13,7 @@
           <b-navbar-item tag="router-link" :to="{ path: '/' }"
             >Competitive Coding
           </b-navbar-item>
-          <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <b-navbar-item tag="router-link" :to="{ path: '/chapters/infosec' }">
             Development
           </b-navbar-item>
           <b-navbar-item
