@@ -4,9 +4,6 @@
       class="hero is-centered has-text-centered is-vcentered has-background-black"
     >
       <div id="app">
-        <figure class="image">
-          <video src="" alt="hacking image" autoplay loop type="video/mp4" />
-        </figure>
         <h1 class="toptext is-size-1 has-text-white logo glow">d4rks0c13ty</h1>
         <p class="toptext is-size-4 has-text-white has-text-centered pt-5">
           Exploit, Pwn, Hack
