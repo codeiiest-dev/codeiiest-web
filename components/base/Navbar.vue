@@ -10,10 +10,18 @@
     <template slot="start">
       <b-navbar-item class="is-dark" tag="div">
         <b-navbar-dropdown label="Chapters" class="has-text-grey-light">
-          <b-navbar-item :to="{ path: '/' }">Competitive Coding </b-navbar-item>
-          <b-navbar-item :to="{ path: '/' }"> Development </b-navbar-item>
-          <b-navbar-item :to="{ path: '/' }"> Machine Learning </b-navbar-item>
-          <b-navbar-item :to="{ path: '/' }"> InfoSec </b-navbar-item>
+          <b-navbar-item tag="router-link" :to="{ path: '/' }"
+            >Competitive Coding
+          </b-navbar-item>
+          <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            Development
+          </b-navbar-item>
+          <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            Machine Learning
+          </b-navbar-item>
+          <b-navbar-item tag="router-link" :to="{ path: '/chapters/infosec' }">
+            InfoSec
+          </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-item tag="router-link" to="/team" class="has-text-grey-light">
           Team
