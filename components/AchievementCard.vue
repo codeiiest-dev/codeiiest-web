@@ -5,7 +5,7 @@
       <div class="card-image">
         <figure class="image is-4by3">
           <img
-            src="/ml/1.png"
+            :src="achv_image_url"
             alt="Placeholder image"
             class="modal-button"
             data-target="modal-image2"
@@ -20,7 +20,7 @@
           </p>
           <div class="columns is-centered-mobile is-variable mt-3 mb-2">
             <button
-              class="button is-medium is-info is-light mr-5"
+              class="button is-medium is-info is-light mr-3"
               @click="gotoSourceCode"
             >
               <span class="icon is-medium">
@@ -60,6 +60,10 @@ export default {
       default: '',
     },
     achv_source_code_url: {
+      type: String,
+      default: '',
+    },
+    achv_image_url: {
       type: String,
       default: '',
     },
