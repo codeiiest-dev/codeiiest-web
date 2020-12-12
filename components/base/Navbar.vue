@@ -16,7 +16,10 @@
           <b-navbar-item tag="router-link" :to="{ path: '/' }">
             Development
           </b-navbar-item>
-          <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <b-navbar-item
+            tag="router-link"
+            :to="{ path: '/chapters/machine-learning' }"
+          >
             Machine Learning
           </b-navbar-item>
           <b-navbar-item tag="router-link" :to="{ path: '/chapters/infosec' }">

@@ -65,9 +65,7 @@
 </template>
 
 <script>
-import reveal from '~/components/Ml-chapter/reveal.vue'
 export default {
-  components: { reveal },
   data() {
     return {
       achievements: [

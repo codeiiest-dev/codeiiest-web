@@ -5,7 +5,7 @@
       <div class="card-image">
         <figure class="image is-4by3">
           <img
-            :src="achv_image_url"
+            :src="achvImage"
             alt="Placeholder image"
             class="modal-button"
             data-target="modal-image2"
@@ -14,9 +14,9 @@
       </div>
       <div class="card-content">
         <div class="content">
-          <h4>{{ achv_title }}</h4>
+          <h4>{{ achvTitle }}</h4>
           <p>
-            {{ achv_content }}
+            {{ achvContent }}
           </p>
           <div class="columns is-centered-mobile is-variable mt-3 mb-2">
             <button
@@ -47,33 +47,33 @@
 <script>
 export default {
   props: {
-    achv_title: {
+    achvTitle: {
       type: String,
       default: '',
     },
-    achv_content: {
+    achvContent: {
       type: String,
       default: '',
     },
-    achv_project_url: {
+    achvProjectURL: {
       type: String,
       default: '',
     },
-    achv_source_code_url: {
+    achvSource: {
       type: String,
       default: '',
     },
-    achv_image_url: {
+    achvImage: {
       type: String,
       default: '',
     },
   },
   methods: {
     gotoSourceCode() {
-      location.href = this.achv_source_code_url
+      location.href = this.achvSource
     },
     gotoProject() {
-      location.href = this.achv_project_url
+      location.href = this.achvProjectURL
     },
   },
 }
