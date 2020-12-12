@@ -51,11 +51,11 @@
             class="column is-two-thirds-mobile is-one-third-tablet is-one-third-widescreen"
           >
             <AchievementCard
-              :achv_title="item.title"
-              :achv_content="item.content"
-              :achv_source_code_url="item.source_code_url"
-              :achv_project_url="item.project_url"
-              :achv_image_url="item.image_url"
+              :achv-title="item.title"
+              :achv-content="item.content"
+              :achv-source="item.source_code_url"
+              :achv-project-u-r-l="item.project_url"
+              :achv-image="item.image_url"
             />
           </div>
         </div>
@@ -73,40 +73,40 @@ export default {
           title: 'Lorem Ipsum',
           content:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry sstandard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book. It has survived not only five centur  but also the leap into electronic typesetting, remaining',
-          source_code_url: 'https://google.com',
-          project_url: 'https://github.com',
+          source_code_url: 'https://github.com/codeiiest',
+          project_url: 'https://github.com/codeiiest-dev',
           image_url: '/ml/1.png',
         },
         {
           title: 'Lorem Ipsum',
           content:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry sstandard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book. It has survived not only five centur  but also the leap into electronic typesetting, remaining',
-          source_code_url: 'https://google.com',
-          project_url: 'https://github.com',
+          source_code_url: 'https://github.com/codeiiest',
+          project_url: 'https://github.com/codeiiest-dev',
           image_url: '/ml/1.png',
         },
         {
           title: 'Lorem Ipsum',
           content:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry sstandard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book. It has survived not only five centur  but also the leap into electronic typesetting, remaining',
-          source_code_url: 'https://google.com',
-          project_url: 'https://github.com',
+          source_code_url: 'https://github.com/codeiiest',
+          project_url: 'https://github.com/codeiiest-dev',
           image_url: '/ml/1.png',
         },
         {
           title: 'Lorem Ipsum',
           content:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry sstandard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book. It has survived not only five centur  but also the leap into electronic typesetting, remaining',
-          source_code_url: 'https://google.com',
-          project_url: 'https://github.com',
+          source_code_url: 'https://github.com/codeiiest',
+          project_url: 'https://github.com/codeiiest-dev',
           image_url: '/ml/1.png',
         },
         {
           title: 'Lorem Ipsum',
           content:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry sstandard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book. It has survived not only five centur  but also the leap into electronic typesetting, remaining',
-          source_code_url: 'https://google.com',
-          project_url: 'https://github.com',
+          source_code_url: 'https://github.com/codeiiest',
+          project_url: 'https://github.com/codeiiest-dev',
           image_url: '/ml/1.png',
         },
       ],
