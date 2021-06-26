@@ -1,15 +1,20 @@
 export default {
-  // router: {
-  //   base: '/codeiiest-web/',
-  // },
+  router: {
+    base: '/codeiiest-web/',
+  },
   ssr: false,
+  target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'CodeIIEST',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'The official website of CodeIIEST',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
