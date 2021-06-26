@@ -7,8 +7,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js",
+    "lint": "eslint --ext .js,.vue --cache --ignore-path .gitignore .",
+    "lint:fix": "eslint --ext .js,.vue --fix --ignore-path .gitignore .",
+    "precommit": "yarn run lint",
     "test": "jest"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
+    "husky": "^6.0.0",
     "nuxt": "^2.14.6",
     "nuxt-buefy": "^0.4.3",
     "vue-cookies": "^1.7.4",
@@ -42,5 +44,10 @@
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
     "vue-jest": "^3.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run precommit"
+    }
   }
 }

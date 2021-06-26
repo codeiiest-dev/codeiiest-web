@@ -30,7 +30,7 @@ jobs:
         run: yarn
       
       - name: Linting
-        run: yarn run lint:js
+        run: yarn run lint
 
       - name: Generate
         run: yarn run generate
