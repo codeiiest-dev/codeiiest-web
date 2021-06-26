@@ -61,7 +61,7 @@
             <div class="column is-5">
               <figure class="image is-16by9">
                 <img
-                  src="/images/pico18.png"
+                  src="/codeiiest-web/images/pico18.png"
                   alt="iiest ctf team @ picoctf 2018"
                 />
               </figure>

@@ -42,12 +42,12 @@ export default {
         {
           name: 'Dwaipayan Ray',
           role: 'General Secretary',
-          url: '/images/Dwai.jpeg',
+          url: '/codeiiest-web/images/Dwai.jpeg',
         },
         {
           name: 'Shivam Singh',
           role: 'Treasurer',
-          url: '/images/Shivam.jpeg',
+          url: '/codeiiest-web/images/Shivam.jpeg',
         },
 
         {
