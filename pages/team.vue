@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import { buildUrl } from '../common/util'
+
 export default {
   data() {
     return {
@@ -42,12 +44,12 @@ export default {
         {
           name: 'Dwaipayan Ray',
           role: 'General Secretary',
-          url: '/codeiiest-web/images/Dwai.jpeg',
+          url: buildUrl('images/Dwai.jpeg'),
         },
         {
           name: 'Shivam Singh',
           role: 'Treasurer',
-          url: '/codeiiest-web/images/Shivam.jpeg',
+          url: buildUrl('images/Shivam.jpeg'),
         },
 
         {

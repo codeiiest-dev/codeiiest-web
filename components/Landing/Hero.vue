@@ -24,10 +24,7 @@
       <h1 class="is-size-1 has-text-white logo">CodeIIEST</h1>
 
       <div class="image is-128x128 container">
-        <img
-          src="/codeiiest-web/images/codeiiest-dark.png"
-          class="is-rounded"
-        />
+        <img :src="buildUrl('images/codeiiest-dark.png')" class="is-rounded" />
       </div>
       <p class="is-size-4 has-text-white has-text-centered pt-5">
         Learn, Develop, Compete
@@ -35,6 +32,16 @@
     </div>
   </div>
 </template>
+
+<script>
+import { buildUrl } from '../../common/util'
+
+export default {
+  methods: {
+    buildUrl,
+  },
+}
+</script>
 
 <style scoped>
 .logo {

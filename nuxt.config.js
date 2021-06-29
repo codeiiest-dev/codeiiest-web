@@ -1,6 +1,6 @@
 export default {
   router: {
-    base: '/codeiiest-web/',
+    base: process.env.NODE_ENV === 'production' ? '/codeiiest-web/' : '/',
   },
   ssr: false,
   target: 'static',
@@ -64,4 +64,9 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // Environment variables
+  env: {
+    urlPostfix: process.env.NODE_ENV === 'production' ? '/codeiiest-web' : '',
+  },
 }
