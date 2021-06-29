@@ -1,7 +1,7 @@
 <script lang='ts'>
 </script>
 <template>
-  <div class="bg-white">
+  <div>
     <div
       class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24"
     >
