@@ -3,10 +3,9 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Brand: typeof import('./src/components/Brand.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     README: typeof import('./src/components/README.md')['default']
-    Brand: typeof import('./src/components/Brand.vue')['default']
-    CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
     CarbonMoon: typeof import('virtual:vite-icons/carbon/moon')['default']
     CarbonSun: typeof import('virtual:vite-icons/carbon/sun')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
