@@ -37,17 +37,17 @@
       <path style=" stroke:none;fill-rule:nonzero;fill:rgb(52.549744%,12.548828%,12.548828%);fill-opacity:1;" d="M 92.503906 114.824219 L 92.503906 264.054688 L 248.171875 264.054688 L 248.171875 249.15625 L 107.355469 249.15625 L 107.355469 82.792969 L 92.503906 82.792969 Z M 92.503906 114.824219 " />
       <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,8.628845%,8.628845%);fill-opacity:1;" d="M 219.546875 83.332031 L 114.796875 83.332031 L 114.796875 241.398438 L 127.753906 241.398438 L 127.753906 96.324219 L 247.410156 96.324219 L 247.410156 83.332031 Z M 219.546875 83.332031 " />
       <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,8.628845%,8.628845%);fill-opacity:1;" d="M 134.625 225.308594 L 247.429688 225.308594 L 247.429688 241.054688 L 134.625 241.054688 Z M 134.625 225.308594 " />
-      <path style=" stroke:none;fill-rule:nonzero;fill:rgb(45.098877%,45.098877%,45.098877%);fill-opacity:1;" d="M 270.519531 264.050781 L 257.058594 264.050781 L 257.058594 57.800781 L 270.519531 57.800781 Z M 270.519531 264.050781 " />
-      <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+      <path style=" stroke:none;fill-rule:nonzero;fill:rgb(65.098572%,65.098572%,65.098572%);fill-opacity:1;" d="M 270.519531 264.050781 L 257.058594 264.050781 L 257.058594 57.800781 L 270.519531 57.800781 Z M 270.519531 264.050781 " />
+      <g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
         <use xlink:href="#glyph0-0" x="48.084807" y="326.527554" />
       </g>
-      <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+      <g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
         <use xlink:href="#glyph0-1" x="88.572986" y="326.527554" />
       </g>
-      <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+      <g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
         <use xlink:href="#glyph0-2" x="130.22042" y="326.527554" />
       </g>
-      <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+      <g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
         <use xlink:href="#glyph0-3" x="166.071567" y="326.527554" />
       </g>
       <g style="fill:rgb(100%,8.628845%,8.628845%);fill-opacity:1;">
@@ -65,8 +65,8 @@
       <g style="fill:rgb(100%,8.628845%,8.628845%);fill-opacity:1;">
         <use xlink:href="#glyph0-6" x="303.378535" y="326.527554" />
       </g>
-      <path style=" stroke:none;fill-rule:nonzero;fill:rgb(32.939148%,32.939148%,32.939148%);fill-opacity:1;" d="M 289.269531 264.050781 L 275.808594 264.050781 L 275.808594 57.800781 L 289.269531 57.800781 Z M 289.269531 264.050781 " />
-      <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 308.019531 264.050781 L 294.558594 264.050781 L 294.558594 57.800781 L 308.019531 57.800781 Z M 308.019531 264.050781 " />
+      <path style=" stroke:none;fill-rule:nonzero;fill:rgb(85.099792%,85.099792%,85.099792%);fill-opacity:1;" d="M 289.269531 264.050781 L 275.808594 264.050781 L 275.808594 57.800781 L 289.269531 57.800781 Z M 289.269531 264.050781 " />
+      <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 308.019531 264.050781 L 294.558594 264.050781 L 294.558594 57.800781 L 308.019531 57.800781 Z M 308.019531 264.050781 " />
     </g>
   </svg>
 </template>
