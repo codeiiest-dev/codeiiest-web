@@ -19,9 +19,9 @@
           class="
             mx-auto
             space-y-16
-            sm:grid sm:grid-cols-2
-            sm:gap-16
-            sm:space-y-0
+            md:grid md:grid-cols-2
+            md:gap-16
+            md:space-y-0
             lg:grid-cols-3
             lg:max-w-5xl
           "
