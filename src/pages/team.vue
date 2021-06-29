@@ -29,7 +29,20 @@
           <li>
             <div class="space-y-6">
               <img
-                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                class="
+                  mx-auto
+                  h-40
+                  w-40
+                  rounded-full
+                  xl:w-56
+                  xl:h-56
+                  filter
+                  grayscale
+                  hover:grayscale-0
+                  transition
+                  duration-300
+                  fade
+                "
                 src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
                 alt=""
               />
@@ -79,7 +92,20 @@
           <li>
             <div class="space-y-6">
               <img
-                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                class="
+                  mx-auto
+                  h-40
+                  w-40
+                  rounded-full
+                  xl:w-56
+                  xl:h-56
+                  filter
+                  grayscale
+                  hover:grayscale-0
+                  transition
+                  duration-300
+                  fade
+                "
                 src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
                 alt=""
               />
@@ -129,7 +155,20 @@
           <li>
             <div class="space-y-6">
               <img
-                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                class="
+                  mx-auto
+                  h-40
+                  w-40
+                  rounded-full
+                  xl:w-56
+                  xl:h-56
+                  filter
+                  grayscale
+                  hover:grayscale-0
+                  transition
+                  duration-300
+                  fade
+                "
                 src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
                 alt=""
               />
@@ -179,7 +218,20 @@
           <li>
             <div class="space-y-6">
               <img
-                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                class="
+                  mx-auto
+                  h-40
+                  w-40
+                  rounded-full
+                  xl:w-56
+                  xl:h-56
+                  filter
+                  grayscale
+                  hover:grayscale-0
+                  transition
+                  duration-300
+                  fade
+                "
                 src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
                 alt=""
               />
@@ -229,7 +281,20 @@
           <li>
             <div class="space-y-6">
               <img
-                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                class="
+                  mx-auto
+                  h-40
+                  w-40
+                  rounded-full
+                  xl:w-56
+                  xl:h-56
+                  filter
+                  grayscale
+                  hover:grayscale-0
+                  transition
+                  duration-300
+                  fade
+                "
                 src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
                 alt=""
               />
@@ -279,7 +344,20 @@
           <li>
             <div class="space-y-6">
               <img
-                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                class="
+                  mx-auto
+                  h-40
+                  w-40
+                  rounded-full
+                  xl:w-56
+                  xl:h-56
+                  filter
+                  grayscale
+                  hover:grayscale-0
+                  transition
+                  duration-300
+                  fade
+                "
                 src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
                 alt=""
               />
