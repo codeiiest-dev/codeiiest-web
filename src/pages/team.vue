@@ -5,7 +5,7 @@ const members: Array<{name: string; role: string; avatar: string; socials: Objec
     role: 'Lead',
     avatar:
       'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80',
-    socials: { twitter: '', linkedin: '', github: '' },
+    socials: { twitter: 'https://twitter.com/', linkedin: 'https://www.linkedin.com/', github: 'https://www.github.com/' },
   },
   {
     name: 'Whitney Francis',
@@ -44,6 +44,9 @@ const members: Array<{name: string; role: string; avatar: string; socials: Objec
   },
 ]
 </script>
+
+// TODO: update the SVGs
+
 <template>
   <div>
     <div
