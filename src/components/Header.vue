@@ -46,10 +46,10 @@
             </transition>
           </Popover>
 
-          <router-link to="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+          <router-link to="/events" class="p-1 text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
             Events
           </router-link>
-          <router-link to="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+          <router-link to="/team" class="p-1 text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
             Team
           </router-link>
         </PopoverGroup>
