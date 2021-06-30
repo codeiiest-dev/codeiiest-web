@@ -33,25 +33,25 @@
               <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                 <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div class="relative grid gap-6 bg-white dark:bg-dark-800 px-5 py-6 sm:gap-8 sm:p-8">
-                    <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100 dark:hover:bg-gray-500">
+                    <router-link v-for="item in chapters" :key="item.name" :to="item.route" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100 dark:hover:bg-gray-500">
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900 dark:text-gray-200">
                           {{ item.name }}
                         </p>
                       </div>
-                    </a>
+                    </router-link>
                   </div>
                 </div>
               </PopoverPanel>
             </transition>
           </Popover>
 
-          <a href="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+          <router-link to="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
             Events
-          </a>
-          <a href="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+          </router-link>
+          <router-link to="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
             Team
-          </a>
+          </router-link>
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <button class="icon-btn mx-2 flex-none !outline-none" :title="'Toggle Theme'" @click="toggleDark">
@@ -87,24 +87,24 @@
             </div>
             <div class="mt-6">
               <nav class="grid gap-y-8">
-                <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
-                  <component :is="item.icon" class="flex-shrink-0 h-6 w-6 text-red-600" aria-hidden="true" />
+                <router-link v-for="chapter in chapters" :key="chapter.name" :to="chapter.route" class="-m-3 p-3 flex chapters-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
+                  <component :is="chapter.icon" class="flex-shrink-0 h-6 w-6 text-red-600" aria-hidden="true" />
                   <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-200">
-                    {{ item.name }}
+                    {{ chapter.name }}
                   </span>
-                </a>
+                </router-link>
               </nav>
             </div>
           </div>
           <div class="py-6 px-5 space-y-6">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <a href="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
+              <router-link to="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
                 Events
-              </a>
+              </router-link>
 
-              <a href="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
+              <router-link to="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
                 Team
-              </a>
+              </router-link>
             </div>
             <div>
               <button class="icon-btn mx-2 flex-none !outline-none" :title="'Toggle Theme'" @click="toggleDark">
@@ -136,15 +136,7 @@ import {
   XIcon,
 } from '@heroicons/vue/outline'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
-import { isDark, toggleDark } from '~/logic'
-
-const solutions = [
-  { name: 'Development', href: '/chapters/development' },
-  { name: 'Competitive Programming', href: '/chapters/competitive-programming' },
-  { name: 'Information Security', href: '/chapters/infosec' },
-  { name: 'Machine Learning', href: '/chapters/machine-learning' },
-  { name: 'Women@CodeIIEST', href: '/chapters/codeiiest-girls' },
-]
+import { isDark, toggleDark, chapters } from '~/logic'
 
 export default {
   components: {
@@ -158,7 +150,7 @@ export default {
   },
   setup() {
     return {
-      solutions,
+      chapters,
       isDark,
       toggleDark,
     }
