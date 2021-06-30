@@ -49,6 +49,8 @@ export default {
                   xl:h-56
                   filter
                   grayscale
+                  ring-4
+                  hover:ring-red-400
                   hover:grayscale-0
                   transition
                   duration-300
