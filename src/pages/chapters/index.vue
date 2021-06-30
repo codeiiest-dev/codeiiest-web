@@ -1,11 +1,4 @@
 <script setup lang="ts">
-const chapters: Array<{name: String; route: String}> = [
-  { name: 'Development', route: '/chapters/development' },
-  { name: 'Competitive Programming', route: '/chapters/competitive-programming' },
-  { name: 'Information Security', route: '/chapters/infosec' },
-  { name: 'Machine Learning', route: '/chapters/machine-learning' },
-  { name: 'Women@CodeIIEST', route: '/chapters/women-codeiiest' },
-]
 </script>
 
 <template>

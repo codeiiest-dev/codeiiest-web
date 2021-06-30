@@ -1,48 +1,12 @@
-<script setup lang='ts'>
-const members: Array<{name: string; role: string; avatar: string; socials: Object}> = [
-  {
-    name: 'Whitney Francis',
-    role: 'Lead',
-    avatar:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80',
-    socials: { twitter: 'https://twitter.com/', linkedin: 'https://www.linkedin.com/', github: 'https://www.github.com/' },
+<script>
+import { members } from '~/logic'
+export default {
+  setup() {
+    return {
+      members,
+    }
   },
-  {
-    name: 'Whitney Francis',
-    role: 'Lead',
-    avatar:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80',
-    socials: { twitter: '', linkedin: '', github: '' },
-  },
-  {
-    name: 'Whitney Francis',
-    role: 'Lead',
-    avatar:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80',
-    socials: { twitter: '', linkedin: '', github: '' },
-  },
-  {
-    name: 'Whitney Francis',
-    role: 'Lead',
-    avatar:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80',
-    socials: { twitter: '', linkedin: '', github: '' },
-  },
-  {
-    name: 'Whitney Francis',
-    role: 'Lead',
-    avatar:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80',
-    socials: { twitter: '', linkedin: '', github: '' },
-  },
-  {
-    name: 'Whitney Francis',
-    role: 'Lead',
-    avatar:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80',
-    socials: { twitter: '', linkedin: '', github: '' },
-  },
-]
+}
 </script>
 
 // TODO: update the SVGs
@@ -96,14 +60,13 @@ const members: Array<{name: string; role: string; avatar: string; socials: Objec
               <div class="space-y-2">
                 <div class="text-lg leading-6 font-medium space-y-1">
                   <h3>{{ member.name }}</h3>
-                  <p class="text-red-600">
+                  <p class="dark:text-red-400 text-red-700">
                     {{ member.role }}
                   </p>
                 </div>
                 <ul class="flex justify-center space-x-5">
-                  <li>
-                    <iconify-icon data-icon="noto:waving-hand"></iconify-icon>
-                    <a :href="member.socials.twitter" class="text-gray-400 hover:text-gray-500">
+                  <li v-if="member.twitter">
+                    <a :href="member.twitter" class="text-gray-400 hover:text-gray-500">
                       <span class="sr-only">Twitter</span>
                       <svg
                         class="w-5 h-5"
@@ -118,8 +81,8 @@ const members: Array<{name: string; role: string; avatar: string; socials: Objec
                     </a>
                   </li>
 
-                  <li>
-                    <a :href="member.socials.linkedin" class="text-gray-400 hover:text-gray-500">
+                  <li v-if="member.linkedin">
+                    <a :href="member.linkedin" class="text-gray-400 hover:text-gray-500">
                       <span class="sr-only">LinkedIn</span>
                       <svg
                         class="w-5 h-5"
@@ -135,8 +98,8 @@ const members: Array<{name: string; role: string; avatar: string; socials: Objec
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a :href="member.socials.github" class="text-gray-400 hover:text-gray-500">
+                  <li v-if="member.github">
+                    <a :href="member.github" class="text-gray-400 hover:text-gray-500">
                       <span class="sr-only">Github</span>
                       <svg
                         class="w-5 h-5"
