@@ -4,7 +4,7 @@ const chapters: Array<{name: String; route: String}> = [
   { name: 'Competitive Programming', route: '/chapters/competitive-programming' },
   { name: 'Information Security', route: '/chapters/infosec' },
   { name: 'Machine Learning', route: '/chapters/machine-learning' },
-  { name: 'CodeIIEST Girls', route: '/chapters/codeiiest-girls' },
+  { name: 'Women@CodeIIEST', route: '/chapters/women-codeiiest' },
 ]
 </script>
 
