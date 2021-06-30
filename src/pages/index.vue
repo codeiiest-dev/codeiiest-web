@@ -21,13 +21,15 @@
               {{ chapter.name }}
             </h1>
             <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eligendi similique exercitationem optio libero vitae accusamus cupiditate laborum eos.
+              {{ chapter.descp }}
             </p>
           </div>
 
           <div>
             <div class="flex items-center mt-2 text-gray-700 dark:text-gray-200">
-              <a :href="chapter.route" class="mx-2 text-red-600 cursor-pointer dark:text-red-400 hover:underline">Read More</a>
+              <router-link :to="chapter.route" class="mx-2 text-red-600 cursor-pointer dark:text-red-400 hover:underline">
+                Read More
+              </router-link>
             </div>
           </div>
         </div>
@@ -37,14 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import { isDark } from '~/logic'
-const chapters: Array<{name: String; route: String}> = [
-  { name: 'Development', route: '/chapters/development' },
-  { name: 'Competitive Programming', route: '/chapters/competitive-programming' },
-  { name: 'Information Security', route: '/chapters/infosec' },
-  { name: 'Machine Learning', route: '/chapters/machine-learning' },
-  { name: 'CodeIIEST Girls', route: '/chapters/codeiiest-girls' },
-]
+import { isDark, chapters } from '~/logic'
 </script>
 
 <route lang="yaml">
