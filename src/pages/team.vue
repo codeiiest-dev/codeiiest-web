@@ -50,6 +50,8 @@ export default {
                   filter
                   grayscale
                   ring-4
+                  hover:shadow-red-700
+                  hover:shadow-2xl
                   hover:ring-red-400
                   hover:grayscale-0
                   transition

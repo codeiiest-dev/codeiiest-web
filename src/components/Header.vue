@@ -17,7 +17,7 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <Popover v-slot="{ open }" class="relative">
-            <PopoverButton :class="[open ? 'text-gray-900 dark:text-gray-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100', 'p-1 group bg-white dark:bg-dark-900 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500']">
+            <PopoverButton :class="[open ? 'text-gray-900 dark:text-gray-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100', 'p-1 group bg-white dark:bg-dark-900 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus:ring-2 focus:ring-red-500']">
               <span>Chapters</span>
               <ChevronDownIcon :class="[open ? 'text-gray-600 dark:text-gray-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100', 'ml-2 h-5 w-5 group-hover:text-gray-500 dark:group-hover:text-gray-100']" aria-hidden="true" />
             </PopoverButton>
@@ -31,7 +31,7 @@
               leave-to-class="opacity-0 translate-y-1"
             >
               <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div class="rounded-lg shadow-xl shadow-red-700 dark:shadow-red-200 ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div class="relative grid gap-6 bg-white dark:bg-dark-800 px-5 py-6 sm:gap-8 sm:p-8">
                     <router-link v-for="item in chapters" :key="item.name" :to="item.route" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100 dark:hover:bg-gray-500">
                       <div class="ml-4">
@@ -71,7 +71,7 @@
       leave-to-class="opacity-0 scale-95"
     >
       <PopoverPanel focus class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-dark-800 divide-y-2 divide-gray-50 dark:divide-dark-200">
+        <div class="rounded-lg shadow-lg shadow-red-700 dark:shadow-red-200 ring-1 ring-black ring-opacity-5 bg-white dark:bg-dark-800 divide-y-2 divide-gray-50 dark:divide-dark-200">
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <div>

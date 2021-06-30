@@ -9,6 +9,9 @@ export default defineConfig({
   ],
   attributify: true,
   theme: {
+    // boxShadow: {
+    //   red: '10px 10px 19px -1px rgba(220,38,38,0.5)',
+    // },
     extend: {
       typography: {
         DEFAULT: {
