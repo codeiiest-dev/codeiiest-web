@@ -53,7 +53,7 @@ export const members: Array<{name: String; role: String; avatar: String; twitter
     role: 'Infosec Lead, Dev team, Mentor',
     avatar: 'https://avatars.githubusercontent.com/u/16396161?v=4',
     twitter: 'https://twitter.com/s02n1ck',
-    linkedin: 'linkedin.com/in/sadn1ck',
+    linkedin: 'https://linkedin.com/in/sadn1ck',
     github: 'https://github.com/sadn1ck',
   },
   {

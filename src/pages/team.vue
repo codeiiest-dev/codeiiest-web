@@ -1,15 +1,17 @@
-<script>
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
 import { members } from '~/logic'
-export default {
-  setup() {
-    return {
-      members,
-    }
-  },
-}
+useHead({
+  // Can be static or computed
+  title: 'Team | CodeIIEST',
+  meta: [
+    {
+      name: 'description',
+      content: 'Meet the members of our team!',
+    },
+  ],
+})
 </script>
-
-// TODO: update the SVGs
 
 <template>
   <div>
@@ -21,10 +23,10 @@ export default {
           <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
             Meet our team
           </h2>
-          <p class="text-xl text-gray-500">
+          <!-- <p class="text-xl text-gray-500">
             Ornare sagittis, suspendisse in hendrerit quis. Sed dui aliquet
             lectus sit pretium egestas vel mattis neque.
-          </p>
+          </p> -->
         </div>
         <ul
           class="
