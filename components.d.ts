@@ -13,7 +13,6 @@ declare module 'vue' {
     PopoverGroup: typeof import('@headlessui/vue')['PopoverGroup']
     CarbonMoon: typeof import('virtual:vite-icons/carbon/moon')['default']
     CarbonSun: typeof import('virtual:vite-icons/carbon/sun')['default']
-    CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
   }
 }
 
