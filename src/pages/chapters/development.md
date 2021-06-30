@@ -3,10 +3,10 @@ title: Development
 ---
 
 <div>
-  <div class="items-center flex flex-col mb-4">
-    <carbon-dicom-overlay class="text-4xl" />
+  <div class="items-center flex flex-col">
+    <carbon-code class="text-4xl text-extrabold" />
   </div>
-  <div class="relative py-16 overflow-hidden">
+  <div class="relative py-8 overflow-hidden">
     <div class="relative px-4 sm:px-6 lg:px-8">
       <div class="text-lg max-w-prose mx-auto">
         <h1>
