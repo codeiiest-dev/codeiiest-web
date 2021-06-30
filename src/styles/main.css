@@ -23,7 +23,7 @@ html.dark {
 }
 
 #nprogress .bar {
-  @apply bg-teal-600 opacity-75;
+  @apply bg-red-600 opacity-75;
 
   position: fixed;
   z-index: 1031;
@@ -36,8 +36,8 @@ html.dark {
 
 .btn {
   @apply px-4 py-1 rounded inline-block
-    bg-teal-600 text-white cursor-pointer
-    hover:bg-teal-700
+    bg-red-600 text-white cursor-pointer
+    hover:bg-red-700
     disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
 }
 
