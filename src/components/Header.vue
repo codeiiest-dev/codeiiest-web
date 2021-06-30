@@ -1,5 +1,5 @@
 <template>
-  <Popover open="true" class="relative bg-white dark:bg-dark-900 mb-10">
+  <Popover open="true" class="relative bg-white dark:bg-dark-900 mb-10 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center border-b-2 border-gray-100 dark:border-gray-800 py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -10,7 +10,7 @@
           </a>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
-          <PopoverButton class="bg-white dark:bg-dark-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+          <PopoverButton class="bg-white dark:bg-dark-400 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500  dark:text-gray-300 dark:hover:text-gray-100 dark:hover:bg-dark-800">
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
