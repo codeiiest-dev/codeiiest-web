@@ -13,7 +13,6 @@ import Prism from 'markdown-it-prism'
 // @ts-expect-error missing types
 import LinkAttributes from 'markdown-it-link-attributes'
 
-
 export default defineConfig({
   resolve: {
     alias: {
@@ -84,9 +83,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
-        theme_color: '#ffffff',
+        name: 'CodeIIEST',
+        short_name: 'CodeIIEST',
+        theme_color: '#121212',
         icons: [
           {
             src: '/pwa-192x192.png',
