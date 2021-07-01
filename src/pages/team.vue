@@ -72,7 +72,7 @@ useHead({
                 </div>
                 <ul class="flex justify-center space-x-5">
                   <li v-if="member.twitter">
-                    <a :href="member.twitter" class="text-gray-400 hover:text-gray-500">
+                    <a :href="member.twitter" target="_blank" class="text-gray-400 hover:text-gray-500">
                       <span class="sr-only">Twitter</span>
                       <svg
                         class="w-5 h-5"
@@ -88,7 +88,7 @@ useHead({
                   </li>
 
                   <li v-if="member.linkedin">
-                    <a :href="member.linkedin" class="text-gray-400 hover:text-gray-500">
+                    <a :href="member.linkedin" target="_blank" class="text-gray-400 hover:text-gray-500">
                       <span class="sr-only">LinkedIn</span>
                       <svg
                         class="w-5 h-5"
@@ -105,7 +105,7 @@ useHead({
                     </a>
                   </li>
                   <li v-if="member.github">
-                    <a :href="member.github" class="text-gray-400 hover:text-gray-500">
+                    <a :href="member.github" target="_blank" class="text-gray-400 hover:text-gray-500">
                       <span class="sr-only">Github</span>
                       <svg
                         class="w-5 h-5"
