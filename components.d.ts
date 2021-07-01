@@ -8,6 +8,7 @@ declare module 'vue' {
     Header: typeof import('./src/components/Header.vue')['default']
     README: typeof import('./src/components/README.md')['default']
     Social: typeof import('./src/components/Social.vue')['default']
+    Calendar: typeof import('./src/components/Calendar.vue')['default']
     PopoverButton: typeof import('@headlessui/vue')['PopoverButton']
     PopoverPanel: typeof import('@headlessui/vue')['PopoverPanel']
     Popover: typeof import('@headlessui/vue')['Popover']
