@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { onMounted, onUnmounted } from 'vue'
+import { getEvents } from '~/logic'
 
 useHead({
   title: 'Events | CodeIIEST',
@@ -10,14 +12,28 @@ useHead({
     },
   ],
 })
+
+const events: Array<any> = []
+
+onMounted(async() => {
+  const { items } = await getEvents()
+  events.push(items)
+})
+
+onUnmounted(() => {
+  events.splice(0, events.length)
+})
 </script>
 
 <template>
   <div class="py-8">
     <div class="max-w-lg mx-auto px-6">
       <div class="flow-root">
+        <p v-if="events.length === 0">
+          No events
+        </p>
         <ul class="-mb-8">
-          <li>
+          <li v-for="(event) in events" :key="event.id">
             <div class="relative pb-8">
               <span
                 class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-700 dark:bg-gray-200"
@@ -47,18 +63,16 @@ useHead({
                       <a
                         href="#"
                         class="font-medium text-red-600 font-600 text-md dark:text-red-400"
-                      >Portfolio Making Contest</a>
+                      >{{ event.source.title }}</a>
                     </div>
-                    <p class="mt-0.5 text-sm text-gray-500 font-300 italic dark:text-gray-400">
-                      24th June, 2021 ~ 4th July, 2021
+                    <p
+                      class="mt-0.5 text-sm text-gray-500 font-300 italic dark:text-gray-400"
+                    >
+                      {{ event.start.date }} ~ {{ event.end.date }}
                     </p>
                   </div>
                   <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Tincidunt nunc ipsum tempor purus vitae id. Morbi in
-                      vestibulum nec varius. Et diam cursus quis sed purus nam.
-                    </p>
+                    <p>{{ event.description }}</p>
                   </div>
                 </div>
               </div>
