@@ -29,10 +29,10 @@
         </p>
       </div>
 
-      <div class="mt-10">
+      <div class="mt-10 px-5 sm:px-20 ">
         <dl
           class="
-          sm:text-6xl
+          sm:text-5xl
           flex
           justify-around
           text-4xl
