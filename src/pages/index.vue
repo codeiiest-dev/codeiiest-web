@@ -86,7 +86,7 @@
 
           <div>
             <div
-              class="flex items-center mt-2 text-gray-700 dark:text-gray-200"
+              class="flex justify-center mt-2 text-gray-700 dark:text-gray-200"
             >
               <router-link
                 :to="chapter.route"
@@ -98,7 +98,7 @@
                   hover:underline
                 "
               >
-                Read More
+                <span>Read More <carbon-arrow-right class="inline" /></span>
               </router-link>
             </div>
           </div>
@@ -110,7 +110,7 @@
 </template>
 
 <script setup lang="ts">
-import { isDark, chapters } from "~/logic";
+import { isDark, chapters } from '~/logic'
 </script>
 
 <route lang="yaml">

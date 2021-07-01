@@ -18,6 +18,7 @@ declare module 'vue' {
     CarbonLogoYoutube: typeof import('virtual:vite-icons/carbon/logo-youtube')['default']
     CarbonLogoGithub: typeof import('virtual:vite-icons/carbon/logo-github')['default']
     CarbonLogoTwitter: typeof import('virtual:vite-icons/carbon/logo-twitter')['default']
+    CarbonArrowRight: typeof import('virtual:vite-icons/carbon/arrow-right')['default']
   }
 }
 
