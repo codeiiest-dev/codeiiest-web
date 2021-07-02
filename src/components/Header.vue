@@ -89,13 +89,15 @@
             </div>
             <div class="mt-6">
               <nav class="grid gap-y-8">
-                <router-link v-for="chapter in chapters" :key="chapter.name" :to="chapter.route" class="-m-3 p-3 flex chapters-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
-                  <!-- <component :is="chapter.icon" class="flex-shrink-0 h-6 w-6 text-red-600" aria-hidden="true" /> -->
-                  <!-- not used right now -->
-                  <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-200">
-                    {{ chapter.name }}
-                  </span>
-                </router-link>
+                <PopoverButton v-for="chapter in chapters" :key="chapter.name">
+                  <router-link :to="chapter.route" class="-m-3 p-3 flex chapters-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
+                    <!-- <component :is="chapter.icon" class="flex-shrink-0 h-6 w-6 text-red-600" aria-hidden="true" /> -->
+                    <!-- not used right now -->
+                    <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-200">
+                      {{ chapter.name }}
+                    </span>
+                  </router-link>
+                </PopoverButton>
               </nav>
             </div>
           </div>
