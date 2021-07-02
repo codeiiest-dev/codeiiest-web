@@ -56,7 +56,7 @@ export default defineConfig({
       // allow auto import and register components used in markdown
       customLoaderMatcher: id => id.endsWith('.md'),
 
-      globalComponentsDeclaration: true,
+      globalComponentsDeclaration: false,
 
       // auto import icons
       customComponentResolvers: [
