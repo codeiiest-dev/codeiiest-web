@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12">
+  <div class="py-12 border-t-2 border-gray-100 dark:border-gray-800 max-w-6xl mx-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p
@@ -49,6 +49,9 @@
           </a>
           <a href="https://www.facebook.com/CodeIIEST" target="_blank" rel="noreferrer">
             <carbon-logo-facebook class="text-gray-300 hover:text-blue-600 transition duration-500 ease-in-out" />
+          </a>
+          <a href="mailto:codeiiest.iiest@gmail.com" target="_blank" rel="noreferrer">
+            <cib-gmail class="text-gray-300 hover:text-red-600 transition duration-500 ease-in-out" />
           </a>
         </dl>
       </div>
