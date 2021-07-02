@@ -7,40 +7,58 @@
       <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
           <h1>
-            <span class="block text-base text-center text-red-600 font-semibold tracking-wide uppercase dark:text-red-400">Introducing</span>
-            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Development Chapter of CodeIIEST</span>
+            <span
+              class="block text-base text-center text-red-600 font-semibold tracking-wide uppercase dark:text-red-400"
+            >Introducing</span>
+            <span
+              class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+            >Development Chapter of CodeIIEST</span>
           </h1>
           <p class="text-left mt-8 text-xl text-gray-500 dark:text-gray-400 leading-8">
-            Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.
+            We give members a head start in their
+            <strong>open-source</strong> and development journeys by hosting
+            <strong>seminars</strong> and
+            <strong>AMAs</strong> with established student leaders in the field. We are a network of like-minded individuals who are enthusiastic to give back to the community by offering
+            <strong>web</strong>,
+            <strong>mobile development</strong> services to students, faculty, clubs, and organizations.
           </p>
         </div>
-        <div class="text-left mt-6 prose prose-red prose-lg text-gray-500 dark:text-gray-400 mx-auto">
-          <p>Faucibus commodo massa rhoncus, volutpat. <strong>Dignissim</strong> sed <strong>eget risus enim</strong>. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. <a href="#">Mattis mauris semper</a> sed amet vitae sed turpis id.</p>
+        <div
+          class="text-left mt-6 prose prose-red prose-lg text-gray-500 dark:text-gray-400 mx-auto"
+        >
           <ul>
-            <li>Quis elit egestas venenatis mattis dignissim.</li>
-            <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-            <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+            <li>The team focuses on upskilling its members so that they can create incredible applications, contribute to open source, and showcase their talent by participating in hackathons. To accomplish this we have conducted sessions on Git and Github, designing your portfolio using HTML, CSS accompanied with an educative competition.</li>
+            <li>
+              We intend to hold seminars on web & mobile development, including
+              <strong>React</strong>,
+              <strong>Vue</strong>,
+              <strong>Flutter</strong>,
+              <strong>React Native</strong>, and
+              <strong>game development</strong>, as well as conduct engaging competitions and hackathons, to accelerate the process of learning of our members.
+            </li>
+            <li>We've created a welcoming and supportive environment where you get advice from experienced mentors and can also collaborate on group projects with your peers under their supervision.</li>
+            <li>
+              We have a fantastic group of mentors who have participated in open source programs such as
+              <strong>Google Summer of Code</strong> under orgs like CERN, LibreOffice, Sugar Labs, Rocket.Chat, mlpack, graphspace,
+              <strong>Coronasafe Fellowship Program</strong> and other open source programs.
+            </li>
           </ul>
-          <p>Quis semper vulputate aliquam venenatis egestas sagittis quisque orci. Donec commodo sit viverra aliquam porttitor ultrices gravida eu. Tincidunt leo, elementum mattis elementum ut nisl, justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis. Amet, duis sed elit interdum dignissim.</p>
-          <h2 class="dark:text-gray-300">
-            From beginner to expert in 30 days
-          </h2>
-          <p>Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
-          <blockquote class="dark:text-gray-400">
-            <p>Test scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
-          </blockquote>
-          <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
-          <figure>
-            <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=facearea&amp;w=1310&amp;h=873&amp;q=80&amp;facepad=3" alt="" width="1310" height="873">
-            <figcaption>Sagittis scelerisque nulla cursus in enim consectetur quam.</figcaption>
-          </figure>
-          <h2 class="dark:text-gray-300">
-            Everything you need to get up and running
-          </h2>
-          <p>Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
-          <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
         </div>
+        <ul class="flex flex-wrap flex-row justify-center items-center">
+          <li v-for="(item) in devImages" :key="item.id">
+            <img
+              height="100"
+              width="100"
+              :src="item.src"
+              :alt="item.alt"
+              class="mx-2"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { devImages } from '~/logic'
+</script>
