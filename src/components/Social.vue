@@ -31,11 +31,12 @@
       <div class="mt-10">
         <dl
           class="
-          sm:text-xl
+          text-xl
           flex
           justify-center
           gap-x-3
-          text-2xl
+          md:gap-x-8
+          md:text-4xl
           "
         >
           <a href="https://www.youtube.com/codeiiest" target="_blank" rel="noreferrer">
