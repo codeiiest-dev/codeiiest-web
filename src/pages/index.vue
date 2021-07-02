@@ -106,11 +106,10 @@
       </div>
     </div>
   </div>
-  <Social />
 </template>
 
 <script setup lang="ts">
-import { isDark, chapters } from '~/logic'
+import { chapters } from '~/logic'
 </script>
 
 <route lang="yaml">

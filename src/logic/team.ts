@@ -1,4 +1,4 @@
-export const members: Array<{name: String; role: String; avatar: String; twitter: String; linkedin: String; github: String}> = [
+export const members: Array<{name: string; role: string; avatar: string; twitter: string; linkedin: string; github: string}> = [
   {
     name: 'Arnab Sen',
     role: 'General Secretary',

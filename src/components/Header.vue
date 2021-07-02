@@ -3,23 +3,23 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center border-b-2 border-gray-100 dark:border-gray-800 py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
-          <a href="/">
+          <router-link to="/">
             <span class="sr-only">CodeIIEST</span>
             <BrandDark v-if="isDark" width="80" height="80" />
             <Brand v-else width="80" height="80" />
-          </a>
+          </router-link>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton class="bg-white dark:bg-dark-700 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500  dark:text-gray-300 dark:hover:text-gray-100 dark:hover:bg-dark-800">
             <span class="sr-only">Open menu</span>
-            <MenuIcon class="h-6 w-6" aria-hidden="true" />
+            <gridicons-menu class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <Popover v-slot="{ open }" class="relative">
             <PopoverButton :class="[open ? 'text-gray-900 dark:text-gray-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100', 'p-1 group bg-white dark:bg-dark-900 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus:ring-2 focus:ring-red-500']">
               <span>Chapters</span>
-              <ChevronDownIcon :class="[open ? 'text-gray-600 dark:text-gray-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100', 'ml-2 h-5 w-5 group-hover:text-gray-500 dark:group-hover:text-gray-100']" aria-hidden="true" />
+              <carbon-chevron-down :class="[open ? 'text-gray-600 dark:text-gray-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100', 'ml-2 h-5 w-5 group-hover:text-gray-500 dark:group-hover:text-gray-100']" aria-hidden="true" />
             </PopoverButton>
 
             <transition
@@ -33,13 +33,15 @@
               <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                 <div class="rounded-lg shadow-xl shadow-red-700 dark:shadow-red-200 ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div class="relative grid gap-6 bg-white dark:bg-dark-800 px-5 py-6 sm:gap-8 sm:p-8">
-                    <router-link v-for="item in chapters" :key="item.name" :to="item.route" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100 dark:hover:bg-gray-500">
-                      <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900 dark:text-gray-200">
-                          {{ item.name }}
-                        </p>
-                      </div>
-                    </router-link>
+                    <PopoverButton v-for="item in chapters" :key="item.name">
+                      <router-link :to="item.route" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100 dark:hover:bg-gray-500">
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900 dark:text-gray-200">
+                            {{ item.name }}
+                          </p>
+                        </div>
+                      </router-link>
+                    </PopoverButton>
                   </div>
                 </div>
               </PopoverPanel>
@@ -81,18 +83,21 @@
               <div class="-mr-2">
                 <PopoverButton class="bg-white dark:bg-dark-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-100 dark:hover:bg-dark-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
                   <span class="sr-only">Close menu</span>
-                  <XIcon class="h-6 w-6" aria-hidden="true" />
+                  <bi-x class="h-6 w-6" aria-hidden="true" />
                 </PopoverButton>
               </div>
             </div>
             <div class="mt-6">
               <nav class="grid gap-y-8">
-                <router-link v-for="chapter in chapters" :key="chapter.name" :to="chapter.route" class="-m-3 p-3 flex chapters-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
-                  <component :is="chapter.icon" class="flex-shrink-0 h-6 w-6 text-red-600" aria-hidden="true" />
-                  <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-200">
-                    {{ chapter.name }}
-                  </span>
-                </router-link>
+                <PopoverButton v-for="chapter in chapters" :key="chapter.name">
+                  <router-link :to="chapter.route" class="-m-3 p-3 flex chapters-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
+                    <!-- <component :is="chapter.icon" class="flex-shrink-0 h-6 w-6 text-red-600" aria-hidden="true" /> -->
+                    <!-- not used right now -->
+                    <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-200">
+                      {{ chapter.name }}
+                    </span>
+                  </router-link>
+                </PopoverButton>
               </nav>
             </div>
           </div>
@@ -119,23 +124,8 @@
   </Popover>
 </template>
 
-<script>
+<script lang="ts">
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
-import {
-  BookmarkAltIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/vue/outline'
-import { ChevronDownIcon } from '@heroicons/vue/solid'
 import { isDark, toggleDark, chapters } from '~/logic'
 
 export default {
@@ -144,9 +134,6 @@ export default {
     PopoverButton,
     PopoverGroup,
     PopoverPanel,
-    ChevronDownIcon,
-    MenuIcon,
-    XIcon,
   },
   setup() {
     return {
