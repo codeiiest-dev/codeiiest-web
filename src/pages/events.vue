@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, onUnmounted } from 'vue'
-import { getEvents } from '~/logic'
+import { onMounted, reactive } from 'vue'
+import { getEvents, formatDateTime } from '~/logic'
 
 useHead({
   title: 'Events | CodeIIEST',
@@ -13,16 +13,13 @@ useHead({
   ],
 })
 
-const events: Array<any> = []
+const events: Array<any> = reactive([])
 
 onMounted(async() => {
   const { items } = await getEvents()
-  events.push(items)
+  items.forEach((i: any) => events.push(i))
 })
 
-onUnmounted(() => {
-  events.splice(0, events.length)
-})
 </script>
 
 <template>
@@ -42,19 +39,9 @@ onUnmounted(() => {
               <div class="relative flex items-start space-x-3">
                 <div class="relative">
                   <img
-                    class="
-                      h-10
-                      w-10
-                      rounded-full
-                      bg-gray-400
-                      flex
-                      items-center
-                      justify-center
-                      ring-8 dark:ring-white
-                      ring-gray-700
-                    "
+                    class="h-10 w-10 rounded-full bg-gray-400 flex items-center justify-center ring-8 dark:ring-white ring-gray-700"
                     src="https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=256&amp;h=256&amp;q=80"
-                    alt=""
+                    alt
                   />
                 </div>
                 <div class="min-w-0 flex-1 text-left pl-4">
@@ -63,12 +50,12 @@ onUnmounted(() => {
                       <a
                         href="#"
                         class="font-medium text-red-600 font-600 text-md dark:text-red-400"
-                      >{{ event.source.title }}</a>
+                      >{{ event.summary }}</a>
                     </div>
                     <p
                       class="mt-0.5 text-sm text-gray-500 font-300 italic dark:text-gray-400"
                     >
-                      {{ event.start.date }} ~ {{ event.end.date }}
+                      {{ formatDateTime(event.start.dateTime) }} ~ {{ formatDateTime(event.end.dateTime) }}
                     </p>
                   </div>
                   <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300">
