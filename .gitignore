@@ -8,3 +8,4 @@ node_modules
 # intellij stuff
 .idea/
 components.d.ts
+.env
