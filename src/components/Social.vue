@@ -10,7 +10,7 @@
             font-bold
           "
         >
-          Social Media
+          Socials
         </p>
         <p
           class="mt-3
