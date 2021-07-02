@@ -3,7 +3,6 @@ lockfileVersion: 5.3
 specifiers:
   '@antfu/eslint-config': ^0.6.6
   '@headlessui/vue': ^1.3.0
-  '@heroicons/vue': ^1.0.1
   '@iconify/json': ^1.1.359
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.28.0
@@ -35,7 +34,6 @@ specifiers:
 
 dependencies:
   '@headlessui/vue': 1.3.0_vue@3.1.2
-  '@heroicons/vue': 1.0.1_vue@3.1.2
   '@vueuse/core': 5.0.3_vue@3.1.2
   '@vueuse/head': 0.6.0_vue@3.1.2
   nprogress: 0.2.0
@@ -1529,14 +1527,6 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.0.0
-    dependencies:
-      vue: 3.1.2
-    dev: false
-
-  /@heroicons/vue/1.0.1_vue@3.1.2:
-    resolution: {integrity: sha512-pClbScVNpkBCHdM86+EAjQ5iUAs1PVjRHDFRNImQQyot75KrAk4SDfeKGDkQqPaGdJ9ZHIK13cl2W0eYc29QWg==}
-    peerDependencies:
-      vue: '>= 3'
     dependencies:
       vue: 3.1.2
     dev: false
