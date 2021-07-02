@@ -13,7 +13,9 @@ specifiers:
   '@vue/server-renderer': ^3.1.2
   '@vueuse/core': ^5.0.3
   '@vueuse/head': ^0.6.0
+  axios: ^0.21.1
   cross-env: ^7.0.3
+  dayjs: ^1.10.5
   eslint: ^7.29.0
   https-localhost: ^4.6.5
   markdown-it-link-attributes: ^3.0.0
@@ -41,6 +43,8 @@ dependencies:
   '@heroicons/vue': 1.0.1_vue@3.1.2
   '@vueuse/core': 5.0.3_vue@3.1.2
   '@vueuse/head': 0.6.0_vue@3.1.2
+  axios: 0.21.1
+  dayjs: 1.10.5
   nprogress: 0.2.0
   prism-theme-vars: 0.2.2
   vue: 3.1.2
@@ -2630,6 +2634,14 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
+  /axios/0.21.1:
+    resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
+    dependencies:
+      follow-redirects: 1.14.1
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
   /babel-plugin-dynamic-import-node/2.3.3:
     resolution: {integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==}
     dependencies:
@@ -3159,6 +3171,10 @@ packages:
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.5.0
     dev: true
+
+  /dayjs/1.10.5:
+    resolution: {integrity: sha512-BUFis41ikLz+65iH6LHQCDm4YPMj5r1YFLdupPIyM4SGcXMmtiLQ7U37i+hGS8urIuqe7I/ou3IS1jVc4nbN4g==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -4034,6 +4050,16 @@ packages:
     resolution: {integrity: sha1-UhTXU3pNBqSjAcDMJi/rhBiAAuc=}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /follow-redirects/1.14.1:
+    resolution: {integrity: sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
 
   /foreach/2.0.5:
     resolution: {integrity: sha1-C+4AUBiusmDQo6865ljdATbsG5k=}
