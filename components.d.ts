@@ -5,21 +5,21 @@ declare module 'vue' {
   export interface GlobalComponents {
     Brand: typeof import('./src/components/Brand.vue')['default']
     BrandDark: typeof import('./src/components/BrandDark.vue')['default']
+    Calendar: typeof import('./src/components/Calendar.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     README: typeof import('./src/components/README.md')['default']
     Social: typeof import('./src/components/Social.vue')['default']
-    Calendar: typeof import('./src/components/Calendar.vue')['default']
     PopoverButton: typeof import('@headlessui/vue')['PopoverButton']
     PopoverPanel: typeof import('@headlessui/vue')['PopoverPanel']
     Popover: typeof import('@headlessui/vue')['Popover']
     PopoverGroup: typeof import('@headlessui/vue')['PopoverGroup']
     CarbonMoon: typeof import('virtual:vite-icons/carbon/moon')['default']
     CarbonSun: typeof import('virtual:vite-icons/carbon/sun')['default']
-    CarbonLogoFacebook: typeof import('virtual:vite-icons/carbon/logo-facebook')['default']
+    CarbonArrowRight: typeof import('virtual:vite-icons/carbon/arrow-right')['default']
     CarbonLogoYoutube: typeof import('virtual:vite-icons/carbon/logo-youtube')['default']
     CarbonLogoGithub: typeof import('virtual:vite-icons/carbon/logo-github')['default']
     CarbonLogoTwitter: typeof import('virtual:vite-icons/carbon/logo-twitter')['default']
-    CarbonArrowRight: typeof import('virtual:vite-icons/carbon/arrow-right')['default']
+    CarbonLogoFacebook: typeof import('virtual:vite-icons/carbon/logo-facebook')['default']
   }
 }
 
