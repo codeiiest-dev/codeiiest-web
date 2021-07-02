@@ -50,7 +50,7 @@ onMounted(async() => {
               ></span>
               <div class="relative flex items-start space-x-3">
                 <div class="relative">
-                  <carbon-code class="p-1 h-10 w-10 text-bold rounded-full text-red-500 dark:text-red-400 bg-white dark:bg-dark-900 flex items-center justify-center" />
+                  <carbon-code class="p-1 h-10 w-10 font-bold rounded-full text-red-500 dark:text-red-400 bg-white dark:bg-dark-900 flex items-center justify-center" />
                 </div>
                 <div class="min-w-0 flex-1 text-left pl-4">
                   <div>
@@ -97,7 +97,7 @@ onMounted(async() => {
       </div>
     </div>
   </div>
-  <div class="mt-16 flex flex-col justify-center items-center">
+  <div class="mt-16 flex flex-col justify-center items-center mb-10">
     <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
       Calendar
     </h2>
