@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { onMounted, reactive } from 'vue'
 import { getEvents, formatDateTime, ytEvents } from '~/logic'
-import Calender from '~/components/Calendar.vue'
+import Calendar from '~/components/Calendar.vue'
 
 useHead({
   // Can be static or computed
@@ -30,7 +30,9 @@ onMounted(async() => {
       <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
         Events
       </h2>
-      <p class="text-xl text-gray-500 dark:text-gray-300">
+      <p
+        class="text-xl text-gray-500 dark:text-gray-300"
+      >
         You will find the various events and sessions the chapters of CodeIIEST organizes in the calendar.
       </p>
     </div>
@@ -84,15 +86,30 @@ onMounted(async() => {
       Past Events & Sessions
     </h2>
     <p class="text-xl text-gray-500 dark:text-gray-300">
-      All our past recorded events and sessions are uploaded to our <a class="text-red-400 hover:text-red-600 hover:underline" href="https://www.youtube.com/codeiiest" target="_blank">Youtube Channel</a>.
+      All our past recorded events and sessions are uploaded to our
+      <a
+        class="text-red-400 hover:text-red-600 hover:underline"
+        href="https://www.youtube.com/codeiiest"
+        target="_blank"
+      >Youtube Channel</a>.
     </p>
     <div class="grid md:grid-cols-2 grid-cols-1 mt-4">
       <div v-for="event in ytEvents" :key="event.link" class="max-w-md p-2">
-        <a :href="event.link" target="_blank"><img :src="event.image"></a>
+        <a :href="event.link" target="_blank">
+          <img :src="event.image" />
+        </a>
       </div>
     </div>
   </div>
-  <div class="mt-16 flex justify-center items-center">
-    <Calender />
+  <div class="mt-16 flex flex-col justify-center items-center">
+    <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
+      Calendar
+    </h2>
+    <p
+      class="text-xl text-gray-500 dark:text-gray-300 mb-4"
+    >
+      Refer to the calendar below to know more about the events & sessions organised by CodeIIEST
+    </p>
+    <Calendar />
   </div>
 </template>
