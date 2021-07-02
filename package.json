@@ -1,4 +1,5 @@
 {
+  "name": "codeiiest",
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
@@ -8,19 +9,16 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.3.0",
-    "@heroicons/vue": "^1.0.1",
     "@vueuse/core": "^5.0.3",
     "@vueuse/head": "^0.6.0",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.1.2",
-    "vue-i18n": "^9.1.6",
     "vue-router": "^4.0.10"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.6.6",
     "@iconify/json": "^1.1.359",
-    "@intlify/vite-plugin-vue-i18n": "^2.2.1",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@vitejs/plugin-vue": "^1.2.3",
@@ -41,7 +39,6 @@
     "vite-plugin-pwa": "^0.8.1",
     "vite-plugin-vue-layouts": "^0.3.1",
     "vite-plugin-windicss": "^1.1.0",
-    "vite-ssg": "^0.11.4",
     "vue-tsc": "^0.2.0"
   }
 }
