@@ -17,6 +17,16 @@ useHead({
 
 const events: Array<any> = reactive([])
 
+function getString(st: String): String {
+  return `${st.replace(/-/g, '').replace(/:/g, '').split('.')[0]}Z`
+}
+
+function getGoogleEventURL(event: any): String {
+  const start = getString(new Date(event.start.dateTime).toISOString())
+  const end = getString(new Date(event.end.dateTime).toISOString())
+  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${event.summary}&details=${event.description}&dates=${start}%2F${end}`
+}
+
 onMounted(async() => {
   const { items } = await getEvents()
   items.forEach((i: any) => events.push(i))
@@ -56,7 +66,8 @@ onMounted(async() => {
                   <div>
                     <div>
                       <a
-                        href="#"
+                        target="_blank"
+                        :href="getGoogleEventURL(event)"
                         class="font-medium text-red-600 font-600 text-md dark:text-red-400"
                       >{{ event.summary }}</a>
                     </div>
