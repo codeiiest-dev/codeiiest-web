@@ -80,7 +80,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
+      includeAssets: ['favicon.svg', 'robots.txt'],
       manifest: {
         name: 'CodeIIEST',
         short_name: 'CodeIIEST',

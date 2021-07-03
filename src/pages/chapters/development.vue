@@ -8,11 +8,11 @@
         <div class="text-lg max-w-prose mx-auto">
           <h1>
             <span
-              class="block text-base text-center text-red-600 font-semibold tracking-wide uppercase dark:text-red-400"
-            >Introducing</span>
+              class="block text-base text-center text-red-600 font-semibold tracking-wide dark:text-red-400"
+            >npm run dev</span>
             <span
               class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
-            >Development Chapter of CodeIIEST</span>
+            >The Development Chapter</span>
           </h1>
           <p class="text-left mt-8 text-xl text-gray-500 dark:text-gray-400 leading-8">
             We give members a head start in their
@@ -60,5 +60,15 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useHead } from '@vueuse/head'
 import { devImages } from '~/logic'
+useHead({
+  title: 'Development | CodeIIEST',
+  meta: [
+    {
+      name: 'description',
+      content: 'The Development Chapter of CodeIIEST',
+    },
+  ],
+})
 </script>

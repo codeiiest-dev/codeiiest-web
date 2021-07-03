@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="items-center flex flex-col">
-      <carbon-code class="text-4xl text-extrabold" />
+      <ri-women-line class="text-4xl text-extrabold" />
     </div>
     <div class="relative py-8 overflow-hidden">
       <div class="relative px-4 sm:px-6 lg:px-8">
@@ -39,3 +39,15 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+useHead({
+  title: 'Women@CodeIIEST | CodeIIEST',
+  meta: [
+    {
+      name: 'description',
+      content: 'The girls chapter of CodeIIEST',
+    },
+  ],
+})
+</script>
