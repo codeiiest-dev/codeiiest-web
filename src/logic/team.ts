@@ -26,7 +26,7 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   {
     name: 'Gaurav Sarkar',
     role: 'ML Lead, Mentor',
-    avatar: 'https://media-exp1.licdn.com/dms/image/C4E03AQHEK_UwFbTpCw/profile-displayphoto-shrink_400_400/0/1625045876840?e=1630540800&v=beta&t=qNmowQr9uvwhkDDRbMuvVbBTL4U8EwGiXatWYvZ3DjQ',
+    avatar: 'https://cdn.discordapp.com/attachments/860519098017251368/860519274611081257/IMG-20200229-WA0039.jpg',
     twitter: '',
     linkedin: 'https://www.linkedin.com/in/gaurav-sarkar05/',
     github: 'https://github.com/GauravSarkar',
@@ -34,9 +34,8 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   {
     name: 'Sanandita Das',
     role: 'Women@CodeIIEST lead, ML team, Mentor',
-    avatar: 'https://rb.gy/q1ltao',
+    avatar: 'https://cdn.discordapp.com/attachments/860519098017251368/860519982294237184/1619587086551.jpeg',
     twitter: '',
-
     linkedin: 'https://www.linkedin.com/in/sanandita-das/',
     github: 'https://github.com/sanandita001',
   },
@@ -59,14 +58,14 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   {
     name: 'Vibali Joshi',
     role: 'Dev team, Mentor',
-    avatar: 'https://media-exp3.licdn.com/dms/image/C4E03AQE2WVQa5zbiIA/profile-displayphoto-shrink_800_800/0/1623387085818?e=1630540800&v=beta&t=RyIDRRnaRpeKaWyIZPW49Wuaju0QV-VQmaSN5oefwVs',
+    avatar: 'https://pbs.twimg.com/profile_images/1370332679078486017/yjHxPVA__400x400.jpg',
     twitter: 'https://twitter.com/VibaliJoshi',
     linkedin: 'https://www.linkedin.com/in/vibali-joshi-51451a115/',
     github: 'https://github.com/vibalijoshi/',
   },
   {
     name: 'Abhiroop Mukherjee',
-    role: 'YT Channel Manager, ML Team',
+    role: 'Youtube Channel Manager, ML Team',
     avatar: 'https://avatars.githubusercontent.com/u/69428539?s=400&u=a28addedb2747781c6feba9708fd4004a0707ef2&v=4',
     twitter: '',
 
@@ -75,7 +74,7 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   },
   {
     name: 'Sujal Modanwal',
-    role: 'President of CC Chapter',
+    role: 'President of CodeChef Chapter',
     avatar: 'https://avatars.githubusercontent.com/u/68843492?v=4',
     twitter: 'https://twitter.com/ModanwalSujal',
     linkedin: 'https://www.linkedin.com/in/sujal-modanwal-2812821b4/',
@@ -83,7 +82,7 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   },
   {
     name: 'Anish De',
-    role: 'CP Lead of CC Chapter, CP team, Mentor',
+    role: 'CP Lead of CodeChef Chapter, CP team, Mentor',
     avatar: 'https://avatars.githubusercontent.com/u/59112660?v=4',
     twitter: 'https://twitter.com/AnishDe10',
     linkedin: 'https://www.linkedin.com/in/anish-de-1b090a193/',
@@ -91,7 +90,7 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   },
   {
     name: 'Jyoti Anjaly',
-    role: 'Outreach & Media Lead of CC Chapter',
+    role: 'Outreach & Media Lead of CodeChef Chapter',
     avatar: 'https://media-exp3.licdn.com/dms/image/C4D03AQFGBl3GmwJHTw/profile-displayphoto-shrink_400_400/0/1622210930383?e=1630540800&v=beta&t=Cb_FEFT1_JH0Xo33mvTZ-hkeznIgxUZY5gcM5RYomrM',
     twitter: 'https://twitter.com/jyotianjaly',
     linkedin: 'https://www.linkedin.com/in/jyoti-anjaly-1979651b3/',
@@ -117,7 +116,6 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
     name: 'Shivam Kumar Singh',
     role: 'Veteran',
     twitter: '',
-
     avatar: 'https://avatars.githubusercontent.com/u/47945055?v=4',
     linkedin: 'https://www.linkedin.com/in/shivamhere/',
     github: 'https://github.com/shivam-51',
@@ -146,6 +144,15 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
     linkedin: 'https://www.linkedin.com/in/rajdeep-ghosh2000rg/',
     github: 'https://github.com/Rajdeep-G',
   },
+
+  {
+    name: 'Abhinaba Chowdhury',
+    role: 'Events Lead of CodeChef Chapter',
+    avatar: 'https://avatars.githubusercontent.com/u/59314943?v=4',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/abhichowdhury7721',
+    github: 'https://github.com/AbhiC7721',
+  },
   {
     name: 'Manish Kundu',
     role: 'CP Team ',
@@ -165,17 +172,17 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   {
     name: 'Neeraj Pratap Hazarika',
     role: 'Video Editor',
-    avatar: 'https://media-exp3.licdn.com/dms/image/C4D35AQG8ID1TyNjsFw/profile-framedphoto-shrink_400_400/0/1606927995294?e=1625068800&v=beta&t=5aS4CqW565KAbaNJ3JAbIdVb6quldREZD5TNBUTiMIM',
+    avatar: 'https://avatars.githubusercontent.com/u/72177954?s=60&v=4',
     twitter: '',
-
     linkedin: 'https://www.linkedin.com/in/neeraj-pratap-hazarika-8800301b8/',
     github: 'https://github.com/NeerajHazarika',
   },
   {
     name: 'Devanshu Chatterjee',
     role: 'Video Editor',
-    avatar: 'https://media-exp1.licdn.com/dms/image/C4E03AQF9OjD4tnpdVg/profile-displayphoto-shrink_400_400/0/1606814254758?e=1630540800&v=beta&t=i2o02SIa3x_PF4_rPMNrqN2ehg14ZwZxtGkKfLriz90',
+    avatar: 'https://avatars.githubusercontent.com/u/78012571?s=400&u=b497b61c1dcdd0ed5b2b5c0f602bcef4698ee097&v=4',
     twitter: '',
     linkedin: 'https://www.linkedin.com/in/devanshu-chatterjee-517645200/',
     github: 'https://github.com/01-dc',
-  }]
+  },
+]

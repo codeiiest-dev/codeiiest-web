@@ -31,10 +31,7 @@
     >
       The Coding Club of IIEST, Shibpur.
       <br /><br />
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, corrupti
-      beatae! Odio facilis consectetur veniam recusandae dolor blanditiis aut,
-      sint tempora excepturi quod qui maiores perferendis alias laboriosam eum
-      voluptate?
+      CodeIIEST is one of the newest clubs of the <span class="font-bold">Indian Institute of Engineering Science and Technology, Shibpur</span>. Since its inception in November of 2014, the club has been actively involved in the development of comprehensive computer science abilities among students. The group is made up of a variety of interests and serves as a fantastic hub for a variety of instructive and interactive programs. The students stay up to date on new technology, which helps them improve their skills and foster creativity and innovation.
     </p>
     <div class="mt-15">
       <h1

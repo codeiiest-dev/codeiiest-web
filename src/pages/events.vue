@@ -17,6 +17,16 @@ useHead({
 
 const events: Array<any> = reactive([])
 
+function getString(st: String): String {
+  return `${st.replace(/-/g, '').replace(/:/g, '').split('.')[0]}Z`
+}
+
+function getGoogleEventURL(event: any): String {
+  const start = getString(new Date(event.start.dateTime).toISOString())
+  const end = getString(new Date(event.end.dateTime).toISOString())
+  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${event.summary}&details=${event.description}&dates=${start}%2F${end}`
+}
+
 onMounted(async() => {
   const { items } = await getEvents()
   items.forEach((i: any) => events.push(i))
@@ -50,13 +60,14 @@ onMounted(async() => {
               ></span>
               <div class="relative flex items-start space-x-3">
                 <div class="relative">
-                  <carbon-code class="p-1 h-10 w-10 text-bold rounded-full text-red-500 dark:text-red-400 bg-white dark:bg-dark-900 flex items-center justify-center" />
+                  <carbon-code class="p-1 h-10 w-10 font-bold rounded-full text-red-500 dark:text-red-400 bg-white dark:bg-dark-900 flex items-center justify-center" />
                 </div>
                 <div class="min-w-0 flex-1 text-left pl-4">
                   <div>
                     <div>
                       <a
-                        href="#"
+                        target="_blank"
+                        :href="getGoogleEventURL(event)"
                         class="font-medium text-red-600 font-600 text-md dark:text-red-400"
                       >{{ event.summary }}</a>
                     </div>
@@ -97,7 +108,7 @@ onMounted(async() => {
       </div>
     </div>
   </div>
-  <div class="mt-16 flex flex-col justify-center items-center">
+  <div class="mt-16 flex flex-col justify-center items-center mb-10">
     <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
       Calendar
     </h2>

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 border-t-2 border-gray-100 dark:border-gray-800 max-w-6xl mx-auto">
+  <div class="mt-5 py-12 border-t-2 border-gray-100 dark:border-gray-800 max-w-6xl mx-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p
@@ -10,7 +10,7 @@
             font-bold
           "
         >
-          Social Media
+          Socials
         </p>
         <p
           class="mt-3
