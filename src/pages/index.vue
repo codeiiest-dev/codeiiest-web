@@ -58,7 +58,8 @@
             bg-white
             rounded-md
             shadow-md
-            hover:shadow-xl hover:shadow-red-700
+            transition duration-300
+            hover:shadow-lg hover:shadow-red-500
             dark:hover:shadow-red-200
             dark:bg-dark-800
           "
@@ -95,7 +96,7 @@
                   hover:underline
                 "
               >
-                <span>Read More <carbon-arrow-right class="inline" /></span>
+                <span>Chapter Details<carbon-arrow-right aria-label="Chapter Details" class="inline" /></span>
               </router-link>
             </div>
           </div>

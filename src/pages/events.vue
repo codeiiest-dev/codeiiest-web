@@ -17,11 +17,11 @@ useHead({
 
 const events: Array<any> = reactive([])
 
-function getString(st: String): String {
+function getString(st: string): string {
   return `${st.replace(/-/g, '').replace(/:/g, '').split('.')[0]}Z`
 }
 
-function getGoogleEventURL(event: any): String {
+function getGoogleEventURL(event: any): string {
   const start = getString(new Date(event.start.dateTime).toISOString())
   const end = getString(new Date(event.end.dateTime).toISOString())
   return `https://www.google.com/calendar/render?action=TEMPLATE&text=${event.summary}&details=${event.description}&dates=${start}%2F${end}`
@@ -98,12 +98,13 @@ onMounted(async() => {
         class="text-red-400 hover:text-red-600 hover:underline"
         href="https://www.youtube.com/codeiiest"
         target="_blank"
+        rel="noreferrer"
       >Youtube Channel</a>.
     </p>
     <div class="grid md:grid-cols-2 grid-cols-1 mt-4">
       <div v-for="event in ytEvents" :key="event.link" class="max-w-md p-2">
-        <a :href="event.link" target="_blank">
-          <img :src="event.image" />
+        <a :href="event.link" target="_blank" rel="noreferrer">
+          <img :src="event.image" :alt="event.alt" />
         </a>
       </div>
     </div>

@@ -1,6 +1,7 @@
 {
   "name": "codeiiest",
   "private": true,
+  "version": "1.0",
   "scripts": {
     "dev": "vite --port 3333 --open",
     "build": "vite build",

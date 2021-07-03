@@ -18,7 +18,7 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   {
     name: 'Sounak Majumder',
     role: 'CP Lead, Mentor',
-    avatar: 'https://userpic.codeforces.org/1230949/title/237df95479d76807.jpg',
+    avatar: 'https://i.imgur.com/XjAXtmU.png',
     twitter: '',
     linkedin: 'https://www.linkedin.com/in/sounak-majumder-45b183197/',
     github: 'https://github.com/m-sounak',
@@ -26,7 +26,7 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   {
     name: 'Gaurav Sarkar',
     role: 'ML Lead, Mentor',
-    avatar: 'https://cdn.discordapp.com/attachments/860519098017251368/860519274611081257/IMG-20200229-WA0039.jpg',
+    avatar: 'https://i.imgur.com/d9Ys3aC.png',
     twitter: '',
     linkedin: 'https://www.linkedin.com/in/gaurav-sarkar05/',
     github: 'https://github.com/GauravSarkar',
@@ -156,7 +156,7 @@ export const members: Array<{name: string; role: string; avatar: string; twitter
   {
     name: 'Manish Kundu',
     role: 'CP Team ',
-    avatar: 'http://tny.im/p5X',
+    avatar: 'https://avatars.githubusercontent.com/u/35730135?v=4',
     twitter: 'https://twitter.com/mkmanish17',
     linkedin: 'https://www.linkedin.com/in/manishkundu17',
     github: 'https://github.com/iammanish17',

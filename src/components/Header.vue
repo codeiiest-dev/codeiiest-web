@@ -90,7 +90,7 @@
             <div class="mt-6">
               <nav class="grid gap-y-8">
                 <PopoverButton v-for="chapter in chapters" :key="chapter.name">
-                  <router-link :to="chapter.route" class="-m-3 p-3 flex chapters-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
+                  <router-link :to="chapter.route" :aria-label="chapter.name + ' chapter'" class="-m-3 p-3 flex chapters-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500">
                     <!-- <component :is="chapter.icon" class="flex-shrink-0 h-6 w-6 text-red-600" aria-hidden="true" /> -->
                     <!-- not used right now -->
                     <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-200">
@@ -103,19 +103,23 @@
           </div>
           <div class="py-6 px-5 space-y-6">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <router-link to="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
-                Events
-              </router-link>
+              <PopoverButton>
+                <router-link to="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
+                  Events
+                </router-link>
+              </PopoverButton>
 
-              <router-link to="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
-                Team
-              </router-link>
+              <PopoverButton>
+                <router-link to="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
+                  Team
+                </router-link>
+              </PopoverButton>
             </div>
             <div>
-              <button class="icon-btn mx-2 flex-none !outline-none" :title="'Toggle Theme'" @click="toggleDark">
+              <PopoverButton class="icon-btn mx-2 flex-none !outline-none" title="Toggle Theme" aria-label="Dark Theme Switcher" @click="toggleDark">
                 <carbon-moon v-if="isDark" />
                 <carbon-sun v-else />
-              </button>
+              </PopoverButton>
             </div>
           </div>
         </div>

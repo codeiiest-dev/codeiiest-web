@@ -29,7 +29,7 @@
       </div>
 
       <div class="mt-10">
-        <dl
+        <div
           class="
           text-xl
           flex
@@ -40,21 +40,21 @@
           "
         >
           <a href="https://www.youtube.com/codeiiest" target="_blank" rel="noreferrer">
-            <carbon-logo-youtube class="text-gray-300 hover:text-red-500 transition duration-500 ease-in-out transform" />
+            <carbon-logo-youtube class="text-gray-300 hover:text-red-500 transition duration-500 ease-in-out transform" aria-label="CodeIIEST YouTube Channel" />
           </a>
           <a href="https://github.com/CodeIIEST-dev" target="_blank" rel="noreferrer">
-            <carbon-logo-github class="text-gray-300 text-gray-300 hover:text-gray-800 dark:hover:text-white transition duration-500 ease-in-out" />
+            <carbon-logo-github class="text-gray-300 text-gray-300 hover:text-gray-800 dark:hover:text-white transition duration-500 ease-in-out" aria-label="CodeIIEST GitHub Org" />
           </a>
           <a href="https://twitter.com/codeiiest" target="_blank" rel="noreferrer">
-            <carbon-logo-twitter class="text-gray-300 hover:text-blue-400 transition duration-500 ease-in-out" />
+            <carbon-logo-twitter class="text-gray-300 hover:text-blue-400 transition duration-500 ease-in-out" aria-label="CodeIIEST Twitter" />
           </a>
           <a href="https://www.facebook.com/CodeIIEST" target="_blank" rel="noreferrer">
-            <carbon-logo-facebook class="text-gray-300 hover:text-blue-600 transition duration-500 ease-in-out" />
+            <carbon-logo-facebook class="text-gray-300 hover:text-blue-600 transition duration-500 ease-in-out" aria-label="CodeIIEST Facebook Page" />
           </a>
           <a href="mailto:codeiiest.iiest@gmail.com" target="_blank" rel="noreferrer">
-            <cib-gmail class="text-gray-300 hover:text-red-600 transition duration-500 ease-in-out" />
+            <cib-gmail class="text-gray-300 hover:text-red-600 transition duration-500 ease-in-out" aria-label="Email Us" />
           </a>
-        </dl>
+        </div>
       </div>
     </div>
   </div>
