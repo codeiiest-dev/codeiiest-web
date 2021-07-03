@@ -37,25 +37,15 @@
             </li>
           </ul>
         </div>
-
-        <ul class="flex flex-wrap flex-row justify-center items-center">
-          <li v-for="(item) in cpImages" :key="item.id">
-            <img
-              height="150"
-              width="150"
-              :src="item.src"
-              :alt="item.alt"
-              class="mx-2"
-            />
-          </li>
-        </ul>
+        <div class="flex justify-center">
+          <img src="https://user-images.githubusercontent.com/25124428/66685841-3680af80-ec9b-11e9-8c86-7044f30854b4.png" alt="competitive programming sites">
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { cpImages } from '~/logic'
 useHead({
   title: 'CP | CodeIIEST',
   meta: [

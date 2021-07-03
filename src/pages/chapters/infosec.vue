@@ -33,24 +33,15 @@
             <li>One of our teams was Top 100 in India in 2020, having participated in well over 20 CTFs</li>
           </ul>
         </div>
-        <ul class="flex flex-wrap flex-row justify-center items-center">
-          <li v-for="(item) in infosecImages" :key="item.id">
-            <img
-              height="150"
-              width="150"
-              :src="item.src"
-              :alt="item.alt"
-              class="mx-2"
-            />
-          </li>
-        </ul>
+        <div class="flex justify-center">
+          <img src="https://wallpapercave.com/wp/wp7794565.jpg" alt="infosec" width="600">
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { infosecImages } from '~/logic'
 useHead({
   title: 'InfoSec | CodeIIEST',
   meta: [
