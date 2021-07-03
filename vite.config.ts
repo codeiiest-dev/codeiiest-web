@@ -77,12 +77,13 @@ export default defineConfig({
       safelist: 'prose prose-sm m-auto text-left',
     }),
 
-    // https://github.com/antfu/vite-plugin-pwa
+    // https://github.com/antfu/vite-plugin-pwa#automatic-reload-when-new-content-available
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt'],
+      includeAssets: ['darkicon.jpg', 'lighticon.jpg', 'robots.txt'],
       manifest: {
         name: 'CodeIIEST',
+        description: 'The Official Website of CodeIIEST',
         short_name: 'CodeIIEST',
         theme_color: '#121212',
         icons: [
@@ -104,6 +105,9 @@ export default defineConfig({
           },
         ],
       },
+      workbox: {
+        cleanupOutdatedCaches: true,
+      }
     }),
   ],
   optimizeDeps: {
