@@ -27,6 +27,13 @@ function getGoogleEventURL(event: any): string {
   return `https://www.google.com/calendar/render?action=TEMPLATE&text=${event.summary}&details=${event.description}&dates=${start}%2F${end}`
 }
 
+function sanitizeHTML(description: string): string {
+  let element = document.createElement('div')
+  element.innerHTML = description
+  let sanitizedHTML = element.innerHTML
+  return sanitizedHTML
+}
+
 onMounted(async() => {
   const { items } = await getEvents()
   items.forEach((i: any) => events.push(i))
@@ -77,8 +84,7 @@ onMounted(async() => {
                       {{ formatDateTime(event.start.dateTime) }} ~ {{ formatDateTime(event.end.dateTime) }}
                     </p>
                   </div>
-                  <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300">
-                    <p>{{ event.description }}</p>
+                  <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300" v-html="sanitizeHTML(event.description)">
                   </div>
                 </div>
               </div>
