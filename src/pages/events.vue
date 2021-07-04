@@ -71,12 +71,13 @@ onMounted(async() => {
                 </div>
                 <div class="min-w-0 flex-1 text-left pl-4">
                   <div>
-                    <div>
-                      <a
-                        target="_blank"
-                        :href="getGoogleEventURL(event)"
-                        class="font-medium text-red-600 font-600 text-md dark:text-red-400"
-                      >{{ event.summary }}</a>
+                    <div class="flex flex-row items-center">
+                      <p class="font-medium text-red-600 font-600 text-md dark:text-red-400 mr-2">
+                        {{ event.summary }}
+                      </p>
+                      <a target="_blank" :href="getGoogleEventURL(event)">
+                        <carbon-bookmark-add />
+                      </a>
                     </div>
                     <p
                       class="mt-0.5 text-sm text-gray-500 font-300 italic dark:text-gray-400"
