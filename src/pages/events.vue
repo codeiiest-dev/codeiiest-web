@@ -85,7 +85,7 @@ onMounted(async() => {
                       {{ formatDateTime(event.start.dateTime) }} ~ {{ formatDateTime(event.end.dateTime) }}
                     </p>
                   </div>
-                  <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300" v-html="sanitizeHTML(event.description)">
+                  <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300 event-body" v-html="sanitizeHTML(event.description)">
                   </div>
                 </div>
               </div>

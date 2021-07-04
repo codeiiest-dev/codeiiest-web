@@ -34,6 +34,10 @@ html.dark {
   height: 2px;
 }
 
+.event-body>a{
+  @apply text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-600;
+}
+
 .btn {
   @apply px-4 py-1 rounded inline-block
     bg-red-600 text-white cursor-pointer
