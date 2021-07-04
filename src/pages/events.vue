@@ -27,6 +27,13 @@ function getGoogleEventURL(event: any): string {
   return `https://www.google.com/calendar/render?action=TEMPLATE&text=${event.summary}&details=${event.description}&dates=${start}%2F${end}`
 }
 
+function sanitizeHTML(description: string): string {
+  let element = document.createElement('div')
+  element.innerHTML = description
+  let sanitizedHTML = element.innerHTML
+  return sanitizedHTML
+}
+
 onMounted(async() => {
   const { items } = await getEvents()
   items.forEach((i: any) => events.push(i))
@@ -64,12 +71,13 @@ onMounted(async() => {
                 </div>
                 <div class="min-w-0 flex-1 text-left pl-4">
                   <div>
-                    <div>
-                      <a
-                        target="_blank"
-                        :href="getGoogleEventURL(event)"
-                        class="font-medium text-red-600 font-600 text-md dark:text-red-400"
-                      >{{ event.summary }}</a>
+                    <div class="flex flex-row items-center">
+                      <p class="font-medium text-red-600 font-600 text-md dark:text-red-400 mr-2">
+                        {{ event.summary }}
+                      </p>
+                      <a target="_blank" :href="getGoogleEventURL(event)">
+                        <carbon-bookmark-add />
+                      </a>
                     </div>
                     <p
                       class="mt-0.5 text-sm text-gray-500 font-300 italic dark:text-gray-400"
@@ -77,8 +85,7 @@ onMounted(async() => {
                       {{ formatDateTime(event.start.dateTime) }} ~ {{ formatDateTime(event.end.dateTime) }}
                     </p>
                   </div>
-                  <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300">
-                    <p>{{ event.description }}</p>
+                  <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300" v-html="sanitizeHTML(event.description)">
                   </div>
                 </div>
               </div>
