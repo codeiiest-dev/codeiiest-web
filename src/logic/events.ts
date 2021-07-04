@@ -1,7 +1,7 @@
 import axios from 'axios'
 import dayjs from 'dayjs'
 
-const DATE_FORMAT = 'DD MMM, YYYY'
+const DATE_FORMAT = 'DD MMM, YYYY hh:mm A'
 
 export const getEvents = async(): Promise<any> => {
   const { data } = await axios.get(`https://www.googleapis.com/calendar/v3/calendars/5rbvb4k7c10ujfrpeboh5je074@group.calendar.google.com/events?key=${import.meta.env.VITE_CALENDAR_KEY}`)
