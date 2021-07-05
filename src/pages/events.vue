@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { onMounted, reactive } from 'vue'
-import { getEvents, formatDateTime, ytEvents } from '~/logic'
+import { getEvents, formatDateTime, ytEvents, getGoogleEventURL, sanitizeHTML } from '~/logic'
 import Calendar from '~/components/Calendar.vue'
 
 useHead({
@@ -15,28 +15,15 @@ useHead({
   ],
 })
 
-const events: Array<any> = reactive([])
-
-function getString(st: string): string {
-  return `${st.replace(/-/g, '').replace(/:/g, '').split('.')[0]}Z`
-}
-
-function getGoogleEventURL(event: any): string {
-  const start = getString(new Date(event.start.dateTime).toISOString())
-  const end = getString(new Date(event.end.dateTime).toISOString())
-  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${event.summary}&details=${event.description}&dates=${start}%2F${end}`
-}
-
-function sanitizeHTML(description: string): string {
-  let element = document.createElement('div')
-  element.innerHTML = description
-  let sanitizedHTML = element.innerHTML
-  return sanitizedHTML
-}
+const state: {events: Array<any>, loading: boolean} = reactive({
+  events: [],
+  loading: true
+})
 
 onMounted(async() => {
-  const { items } = await getEvents()
-  items.forEach((i: any) => events.push(i))
+  const items = await getEvents()
+  items.forEach((i: any) => state.events.push(i))
+  state.loading = false;
 })
 
 </script>
@@ -45,21 +32,24 @@ onMounted(async() => {
   <div class="py-8">
     <div class="mb-12">
       <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-        Events
+        Upcoming & Ongoing Events
       </h2>
       <p
         class="text-xl text-gray-500 dark:text-gray-300"
       >
-        You will find the various events and sessions the chapters of CodeIIEST organizes in the calendar.
+        You will find the various events and sessions of chapters of CodeIIEST in this timeline.
       </p>
     </div>
     <div class="max-w-lg mx-auto px-6">
       <div class="flow-root">
-        <p v-if="events.length === 0">
+        <p v-if="state.events.length === 0 && !state.loading">
           No events
         </p>
+        <p v-if="state.loading">
+          Loading
+        </p>
         <ul class="mb-16">
-          <li v-for="(event) in events" :key="event.id">
+          <li v-for="(event) in state.events" :key="event.id">
             <div class="relative pb-8">
               <span
                 class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-700 dark:bg-gray-200"
