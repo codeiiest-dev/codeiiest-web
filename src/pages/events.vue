@@ -27,6 +27,8 @@ onMounted(async() => {
   state.loading = false;
 })
 
+const chapterIconClass = "p-1 h-8 w-10 font-bold rounded-full text-red-500 dark:text-red-400 bg-white dark:bg-dark-900 flex items-center justify-center"
+
 </script>
 
 <template>
@@ -58,7 +60,11 @@ onMounted(async() => {
               ></span>
               <div class="relative flex items-start space-x-3">
                 <div class="relative">
-                  <carbon-code class="p-1 h-10 w-10 font-bold rounded-full text-red-500 dark:text-red-400 bg-white dark:bg-dark-900 flex items-center justify-center" />
+                    <carbon-code :class="chapterIconClass" v-if="event.location === 'dev'" />
+                    <ri-women-line :class="chapterIconClass" v-if="event.location === 'women'" />
+                    <la-laptop-medical :class="chapterIconClass" v-if="event.location === 'sec'"/>
+                    <la-robot :class="chapterIconClass" v-if="event.location === 'ml'" />
+                    <carbon-timer :class="chapterIconClass" v-if="event.location === 'cp'" />
                 </div>
                 <div class="min-w-0 flex-1 text-left pl-4">
                   <div>
