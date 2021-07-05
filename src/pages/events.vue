@@ -33,12 +33,12 @@ onMounted(async() => {
   <div class="py-8">
     <div class="mb-12">
       <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-        Upcoming & Ongoing Events
+        Events
       </h2>
       <p
         class="text-xl text-gray-500 dark:text-gray-300"
       >
-        You will find the various events and sessions of chapters of CodeIIEST in this timeline.
+        You will find the various events and sessions by chapters of CodeIIEST in this timeline.
       </p>
     </div>
     <div class="max-w-lg mx-auto px-6">
