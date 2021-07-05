@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import spinner from "~/components/spinner.svg";
 import { useHead } from '@vueuse/head'
 import { onMounted, reactive } from 'vue'
 import { getEvents, formatDateTime, ytEvents, getGoogleEventURL, sanitizeHTML } from '~/logic'
@@ -46,9 +47,9 @@ onMounted(async() => {
           No events
         </p>
         <p v-if="state.loading">
-          Loading
+          <img :src="spinner" class="h-18 w-18 mx-auto mb-5"/>
         </p>
-        <ul class="mb-16">
+        <ul v-else class="mb-16">
           <li v-for="(event) in state.events" :key="event.id">
             <div class="relative pb-8">
               <span
