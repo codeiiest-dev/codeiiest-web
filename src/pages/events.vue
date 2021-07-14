@@ -60,6 +60,7 @@ const chapterIconClass = "p-1 h-8 w-10 font-bold rounded-full text-red-500 dark:
               ></span>
               <div class="relative flex items-start space-x-3">
                 <div class="relative">
+                    <fluent-people-community-28-filled :class="chapterIconClass" v-if="!event.location" />
                     <carbon-code :class="chapterIconClass" v-if="event.location === 'dev'" />
                     <ri-women-line :class="chapterIconClass" v-if="event.location === 'women'" />
                     <la-laptop-medical :class="chapterIconClass" v-if="event.location === 'sec'"/>
