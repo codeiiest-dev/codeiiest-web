@@ -6,7 +6,12 @@ const DATE_FORMAT = 'DD MMM, YYYY hh:mm A'
 export const getEvents = async(): Promise<any> => {
   const { data } = await axios.get(`https://www.googleapis.com/calendar/v3/calendars/5rbvb4k7c10ujfrpeboh5je074@group.calendar.google.com/events?key=${import.meta.env.VITE_CALENDAR_KEY}`)
   const { items } = data;
-  return items.filter((i: any) => dayjs(i.end.dateTime).isAfter(dayjs()) && !i.recurrence)
+  const sortedEvents = items.filter(
+    (i: any) => dayjs(i.end.dateTime).isAfter(dayjs()) && !i.recurrence
+  );
+  sortedEvents.sort((a: any, b: any) =>
+    dayjs(a.start.dateTime).isBefore(dayjs(b.start.dateTime))? -1: 1);
+  return sortedEvents;
 }
 
 export const formatDateTime = (dateTime: string): string => {
