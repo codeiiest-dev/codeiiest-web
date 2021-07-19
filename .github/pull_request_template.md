@@ -14,7 +14,6 @@
 
 # Checklist
 - [ ] Tested Changes
-- [ ] Stakeholder Approval
 - [ ] Translations
 - [ ] Documentation
 
