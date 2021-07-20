@@ -54,6 +54,9 @@
           <router-link to="/team" class="p-1 text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
             Team
           </router-link>
+          <router-link to="/alumni" class="p-1 text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+            Alumni
+          </router-link>
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <button class="icon-btn mx-2 flex-none !outline-none" :title="'Toggle Theme'" @click="toggleDark">
@@ -102,7 +105,7 @@
             </div>
           </div>
           <div class="py-6 px-5 space-y-6">
-            <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+            <div class="grid grid-cols-3 gap-y-4 gap-x-8">
               <PopoverButton>
                 <router-link to="/events" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
                   Events
@@ -112,6 +115,12 @@
               <PopoverButton>
                 <router-link to="/team" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
                   Team
+                </router-link>
+              </PopoverButton>
+
+              <PopoverButton>
+                <router-link to="/alumni" class="text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100">
+                  Alumni
                 </router-link>
               </PopoverButton>
             </div>
