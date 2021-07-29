@@ -1,8 +1,11 @@
 <template>
   <Popover open="true" class="relative bg-white dark:bg-dark-900 mb-10 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center border-b-2 border-gray-100 dark:border-gray-800 py-6 md:justify-start md:space-x-10">
-        <div class="flex justify-start lg:w-0 lg:flex-1">
+      <div class="flex justify-between items-center border-b-2 border-gray-100 dark:border-gray-800 py-6 md:justify-start md:space-x-5">
+        <div class="flex justify-start lg:flex-1">
+          <a href="https://www.iiests.ac.in/" target="_blank" rel="noreferrer" class="flex-none">
+            <img src="https://oldwww.iiests.ac.in/images/iiest-logo.png" width="80" height="80" />
+          </a>
           <router-link to="/">
             <span class="sr-only">CodeIIEST</span>
             <BrandDark v-if="isDark" width="80" height="80" />
@@ -15,7 +18,7 @@
             <gridicons-menu class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+        <PopoverGroup as="nav" class="hidden md:flex space-x-5">
           <Popover v-slot="{ open }" class="relative">
             <PopoverButton :class="[open ? 'text-gray-900 dark:text-gray-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100', 'p-1 group bg-white dark:bg-dark-900 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus:ring-2 focus:ring-red-500']">
               <span>Chapters</span>
