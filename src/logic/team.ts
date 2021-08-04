@@ -1,4 +1,13 @@
-export const members: Array<{name: string; role: string; avatar: string; twitter: string; linkedin: string; github: string}> = [
+export const members: Array<{name: string; role: string; avatar: string; twitter: string; linkedin: string; github: string; website?: string}> = [
+  {
+    name: 'Prof. Shyamalendu Kandar',
+    role: 'Professor In Charge (PIC)',
+    avatar: 'https://www.iiests.ac.in/assets/images/faculty/103.jpg',
+    twitter: '',
+    linkedin: '',
+    github: '',
+    website: 'https://www.iiests.ac.in/IIEST/Faculty/it-shyamalenduk'
+  },
   {
     name: 'Arnab Sen',
     role: 'General Secretary',

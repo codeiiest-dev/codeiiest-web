@@ -71,6 +71,11 @@ useHead({
                   </p>
                 </div>
                 <ul class="flex justify-center space-x-5">
+                  <li v-if="member.website">
+                    <a :href="member.website" target="_blank" class="text-gray-400 hover:text-gray-500" rel="noreferrer">
+                      <carbon-wikis aria-hidden="true" />
+                    </a>
+                  </li>
                   <li v-if="member.twitter">
                     <a :href="member.twitter" target="_blank" class="text-gray-400 hover:text-gray-500" rel="noreferrer">
                       <span class="sr-only">Twitter</span>
