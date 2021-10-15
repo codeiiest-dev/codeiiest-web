@@ -3,28 +3,35 @@ import dayjs from 'dayjs'
 
 const DATE_FORMAT = 'DD MMM, YYYY hh:mm A'
 
-export const getEvents = async(): Promise<any> => {
-  const { data } = await axios.get(`https://www.googleapis.com/calendar/v3/calendars/5rbvb4k7c10ujfrpeboh5je074@group.calendar.google.com/events?key=${import.meta.env.VITE_CALENDAR_KEY}`)
+// WARN: maynot work for more than 1 recurring event
+const getRecurringEvents = async (): Promise<any> => {
+  const { data } = await axios.get(`https://www.googleapis.com/calendar/v3/calendars/5rbvb4k7c10ujfrpeboh5je074@group.calendar.google.com/events?key=${import.meta.env.VITE_CALENDAR_KEY}&timeMin=${dayjs().toISOString()}&singleEvents=True&maxResults=1`);
   const { items } = data;
+  return items;
+}
 
-  const recurringEvents = items.filter((i:any)=> i.recurrence);
-
-  // get unique events based on etag
-  const uniqueRecurringEvents = [...new Map(recurringEvents.map((i:any) => [i.etag, i])).values()];
-
+const getNormalEvents = async (): Promise<any> => {
+  const { data } = await axios.get(`https://www.googleapis.com/calendar/v3/calendars/5rbvb4k7c10ujfrpeboh5je074@group.calendar.google.com/events?key=${import.meta.env.VITE_CALENDAR_KEY}&timeMin=${dayjs().toISOString()}`)
+  const { items } = data;
   const sortedEvents = items.filter(
-    (i: any) => !i.recurrence && i.end && dayjs(i.end.dateTime).isAfter(dayjs())
+    (i: any) => !i.recurrence && i.end
   );
   sortedEvents.sort((a: any, b: any) =>
-    dayjs(a.start.dateTime).isBefore(dayjs(b.start.dateTime))? -1: 1);
-  return sortedEvents.concat(uniqueRecurringEvents);
+    dayjs(a.start.dateTime).isBefore(dayjs(b.start.dateTime)) ? -1 : 1);
+  return sortedEvents;
+}
+
+export const getEvents = async (): Promise<any> => {
+  const recurringEvents = await getRecurringEvents();
+  const normalEvents = await getNormalEvents();
+  return normalEvents.concat(recurringEvents);
 }
 
 export const formatDateTime = (dateTime: string): string => {
   return dayjs(dateTime).format(DATE_FORMAT)
 }
 
-export const ytEvents: Array<{link: string; image: string; alt: string}> = [
+export const ytEvents: Array<{ link: string; image: string; alt: string }> = [
   { image: 'https://res.cloudinary.com/marcomontalbano/image/upload/v1625165552/video_to_markdown/images/youtube--O8zdhpFAW_w-c05b58ac6eb4c4700831b2b3070cd403.jpg', link: 'https://www.youtube.com/watch?v=O8zdhpFAW_w', alt: 'Fresher\'s Induction | CodeIIEST | 2021' },
   { image: 'https://res.cloudinary.com/marcomontalbano/image/upload/v1625200008/video_to_markdown/images/youtube--4vosyExcRvY-c05b58ac6eb4c4700831b2b3070cd403.jpg', link: 'https://www.youtube.com/watch?v=4vosyExcRvY', alt: 'GCD, Prime, and Exponents | CodeIIEST CP Sessions' },
   { image: 'https://res.cloudinary.com/marcomontalbano/image/upload/v1625200675/video_to_markdown/images/youtube--uAHySjoHXuE-c05b58ac6eb4c4700831b2b3070cd403.jpg', link: 'https://www.youtube.com/watch?v=uAHySjoHXuE', alt: 'Resume 101 | CodeIIEST Girls Session' },
