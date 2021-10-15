@@ -83,7 +83,7 @@ const chapterIconClass = "p-1 h-8 w-10 font-bold rounded-full text-red-500 dark:
                       {{ formatDateTime(event.start.dateTime) }} ~ {{ formatDateTime(event.end.dateTime) }}
                     </p>
                   </div>
-                  <div class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300 event-body" v-html="sanitizeHTML(event.description)">
+                  <div v-if="event.description" class="mt-4 text-sm text-gray-700 font-500 dark:text-gray-300 event-body" v-html="sanitizeHTML(event.description)">
                   </div>
                 </div>
               </div>
