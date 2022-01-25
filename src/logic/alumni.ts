@@ -1,12 +1,12 @@
 export const alumniMembers: Array<{
-    name: string;
-    avatar: string;
-    link: {
-        github?: string;
-        linkedin?: string;
-        twitter?: string;
-        facebook?: string;
-    };
+  name: string;
+  avatar: string;
+  link: {
+    github?: string;
+    linkedin?: string;
+    twitter?: string;
+    facebook?: string;
+  };
 }> = [
     {
       avatar: '/alumni/sapt.jpg',
@@ -203,12 +203,18 @@ export const alumniMembers: Array<{
     },
     {
       avatar: '/alumni/arijit.png',
-      link: { github: 'https://github.com/TheArijitSaha' },
+      link: { linkedin: 'https://www.linkedin.com/in/thearijitsaha/', github: 'https://github.com/TheArijitSaha' },
       name: 'Arijit Saha'
     },
     {
       avatar: '/alumni/suri.png',
-      link: { github: 'https://github.com/suri-kumkaran' },
+      link: { linkedin: 'https://www.linkedin.com/in/surikumkaran/', github: 'https://github.com/suri-kumkaran' },
       name: 'Suryansh Gupta'
+    },
+    {
+      avatar: 'https://media-exp1.licdn.com/dms/image/C5103AQGWmgvpGwgUNg/profile-displayphoto-shrink_200_200/0/1562173100915?e=1648684800&v=beta&t=lCsuICIsixBJqP_4Hdy1yQCnTj8douLA7XYiOuuBM7I',
+      link: { linkedin: 'https://www.linkedin.com/in/diksha-modi/' },
+      name: 'Diksha Modi'
     }
-];
+
+  ];
