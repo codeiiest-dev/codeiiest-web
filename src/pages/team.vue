@@ -42,6 +42,7 @@ useHead({
           <li v-for="(member, index) in members" :key="index">
             <div class="space-y-6">
               <img
+                v-if = member.avatar
                 class="
                   mx-auto
                   h-40
@@ -61,6 +62,29 @@ useHead({
                   fade
                 "
                 :src="member.avatar"
+                :aria-label="member.name"
+              />
+              <img
+                v-else
+                class="
+                  mx-auto
+                  h-40
+                  w-40
+                  rounded-full
+                  xl:w-56
+                  xl:h-56
+                  filter
+                  grayscale
+                  ring-4
+                  hover:shadow-red-700
+                  hover:shadow-2xl
+                  hover:ring-red-400
+                  hover:grayscale-0
+                  transition
+                  duration-300
+                  fade
+                "
+                src="public\default-avatar-icon.png"
                 :aria-label="member.name"
               />
               <div class="space-y-2">
