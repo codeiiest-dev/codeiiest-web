@@ -208,7 +208,6 @@ export const members: Array<{ name: string; role: string; avatar: string; twitte
     linkedin: 'https://www.linkedin.com/in/rajdeep-ghosh2000rg/',
     github: 'https://github.com/Rajdeep-G',
   },
-
   {
     name: 'Abhinaba Chowdhury',
     role: 'Veteran, Events Lead of CodeChef Chapter 2021-22',
@@ -243,7 +242,7 @@ export const members: Array<{ name: string; role: string; avatar: string; twitte
   },
   {
     name: 'Dwaipayan Ray',
-    role: 'Veteran',
+    role: 'Alumni',
     avatar: 'https://avatars.githubusercontent.com/u/35661311?v=4',
     twitter: 'https://twitter.com/RayDwaipayan',
     linkedin: 'https://www.linkedin.com/in/dwaipayan-ray/',
@@ -251,7 +250,7 @@ export const members: Array<{ name: string; role: string; avatar: string; twitte
   },
   {
     name: 'Shivam Kumar Singh',
-    role: 'Veteran',
+    role: 'Alumni',
     twitter: '',
     avatar: 'https://avatars.githubusercontent.com/u/47945055?v=4',
     linkedin: 'https://www.linkedin.com/in/shivamhere/',
@@ -259,7 +258,7 @@ export const members: Array<{ name: string; role: string; avatar: string; twitte
   },
   {
     name: 'Narapurredy Srikanth',
-    role: 'Veteran',
+    role: 'Alumni',
     twitter: '',
     avatar: 'https://avatars.githubusercontent.com/u/63089621?v=4',
     linkedin: 'https://www.linkedin.com/in/narapureddy-srikanth/',
@@ -267,7 +266,7 @@ export const members: Array<{ name: string; role: string; avatar: string; twitte
   },
   {
     name: 'Sarbik Betal',
-    role: 'Veteran',
+    role: 'Alumni',
     avatar: 'https://avatars.githubusercontent.com/u/41508422?v=4',
     twitter: 'https://twitter.com/Srbk55',
     linkedin: 'https://www.linkedin.com/in/sarbikbetal/',
