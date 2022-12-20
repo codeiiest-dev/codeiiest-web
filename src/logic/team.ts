@@ -240,37 +240,5 @@ export const members: Array<{ name: string; role: string; avatar: string; twitte
     twitter: '',
     linkedin: 'https://www.linkedin.com/in/devanshu-chatterjee-517645200/',
     github: 'https://github.com/01-dc',
-  },
-  {
-    name: 'Dwaipayan Ray',
-    role: 'Veteran',
-    avatar: 'https://avatars.githubusercontent.com/u/35661311?v=4',
-    twitter: 'https://twitter.com/RayDwaipayan',
-    linkedin: 'https://www.linkedin.com/in/dwaipayan-ray/',
-    github: 'https://github.com/raydwaipayan',
-  },
-  {
-    name: 'Shivam Kumar Singh',
-    role: 'Veteran',
-    twitter: '',
-    avatar: 'https://avatars.githubusercontent.com/u/47945055?v=4',
-    linkedin: 'https://www.linkedin.com/in/shivamhere/',
-    github: 'https://github.com/shivam-51',
-  },
-  {
-    name: 'Narapurredy Srikanth',
-    role: 'Veteran',
-    twitter: '',
-    avatar: 'https://avatars.githubusercontent.com/u/63089621?v=4',
-    linkedin: 'https://www.linkedin.com/in/narapureddy-srikanth/',
-    github: 'https://github.com/Narapureddy-Srikanth',
-  },
-  {
-    name: 'Sarbik Betal',
-    role: 'Veteran',
-    avatar: 'https://avatars.githubusercontent.com/u/41508422?v=4',
-    twitter: 'https://twitter.com/Srbk55',
-    linkedin: 'https://www.linkedin.com/in/sarbikbetal/',
-    github: 'http://github.com/sarbikbetal',
-  },
+  }
 ]
