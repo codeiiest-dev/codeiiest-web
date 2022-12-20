@@ -208,7 +208,6 @@ export const members: Array<{ name: string; role: string; avatar: string; twitte
     linkedin: 'https://www.linkedin.com/in/rajdeep-ghosh2000rg/',
     github: 'https://github.com/Rajdeep-G',
   },
-
   {
     name: 'Abhinaba Chowdhury',
     role: 'Veteran, Events Lead of CodeChef Chapter 2021-22',
