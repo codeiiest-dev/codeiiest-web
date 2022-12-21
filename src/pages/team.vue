@@ -84,7 +84,7 @@ useHead({
                   duration-300
                   fade
                 "
-                src="public\default-avatar-icon.png"
+                src="..\..\public\default-avatar-icon.png"
                 :aria-label="member.name"
               />
               <div class="space-y-2">
