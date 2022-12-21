@@ -147,28 +147,6 @@ export const alumniMembers: Array<{
       },
       name: 'Ankit Kumar Giri'
     },
-    // they are not alumnus yet
-    // {
-    //   avatar: '/alumni/srikant.png',
-    //   link: { linkedin: 'https://www.linkedin.com/in/narapureddy-srikanth/' },
-    //   name: 'Srikanth N.'
-    // },
-    // {
-    //   avatar: '/alumni/shivam.png',
-    //   link: {
-    //     facebook: 'https://www.facebook.com/heyshivam51',
-    //     linkedin: 'https://www.linkedin.com/in/shivamhere/'
-    //   },
-    //   name: 'Shivam Kumar Singh'
-    // },
-    // {
-    //   avatar: '/alumni/dwai.png',
-    //   link: {
-    //     facebook: 'https://www.facebook.com/profile.php?id=100009905534262',
-    //     linkedin: 'https://www.linkedin.com/in/dwaipayan-ray/'
-    //   },
-    //   name: 'Dwaipayan Ray'
-    // },
     {
       avatar: '/alumni/vivek.png',
       link: {
@@ -212,9 +190,45 @@ export const alumniMembers: Array<{
       name: 'Suryansh Gupta'
     },
     {
-      avatar: 'https://media-exp1.licdn.com/dms/image/C5103AQGWmgvpGwgUNg/profile-displayphoto-shrink_200_200/0/1562173100915?e=1648684800&v=beta&t=lCsuICIsixBJqP_4Hdy1yQCnTj8douLA7XYiOuuBM7I',
+      avatar: 'https://media.licdn.com/dms/image/C5103AQGWmgvpGwgUNg/profile-displayphoto-shrink_800_800/0/1562173100915?e=1677110400&v=beta&t=b_u0_jlxg5HTPoJNWnJGz8qdlb2id_InHRbJa9yQCxo',
       link: { linkedin: 'https://www.linkedin.com/in/diksha-modi/' },
       name: 'Diksha Modi'
-    }
+    },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/41508422?v=4',
+      link: {
+        github: 'http://github.com/sarbikbetal',
+        linkedin: 'https://www.linkedin.com/in/sarbikbetal/',
+        twitter: 'https://twitter.com/Srbk55'
+      },
+      name: 'Sarbik Betal'
+    },
+    {
+      avatar: '/alumni/srikant.png',
+      link: {
+        linkedin: 'https://www.linkedin.com/in/narapureddy-srikanth/',
+        github: 'https://github.com/Narapureddy-Srikanth',
+      },
+      name: 'Narapurredy Srikanth'
+    },
+    {
+      avatar: '/alumni/shivam.png',
+      link: {
+        facebook: 'https://www.facebook.com/heyshivam51',
+        linkedin: 'https://www.linkedin.com/in/shivamhere/',
+        github: 'https://github.com/shivam-51'
+      },
+      name: 'Shivam Kumar Singh'
+    },
+    {
+      avatar: '/alumni/dwai.png',
+      link: {
+        facebook: 'https://www.facebook.com/profile.php?id=100009905534262',
+        linkedin: 'https://www.linkedin.com/in/dwaipayan-ray/',
+        github: 'https://github.com/raydwaipayan',
+        twitter: 'https://twitter.com/RayDwaipayan'
+      },
+      name: 'Dwaipayan Ray'
+    },
 
   ];
