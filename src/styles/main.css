@@ -103,3 +103,12 @@ html.dark {
     column-count: 2;
   }
 }
+
+.v-lazy-image {
+  filter: blur(20px);
+  transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+  filter: blur(0);
+}

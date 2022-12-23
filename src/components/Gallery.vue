@@ -1,14 +1,19 @@
 <template>
     <div class="gallery-container">
         <div class="gallery-item" v-for="(image, index) in images" :key="index">
-            <img :src="image" alt="random image">
+            <v-lazy-image :src="image" alt="random image" />
         </div>
     </div>
 </template>
 
 <script>
+import VLazyImage from "v-lazy-image";
+
 export default {
     name: 'Gallery',
+    components: {
+        "v-lazy-image": VLazyImage,
+    },
     data() {
         return {
             images: []
