@@ -1,5 +1,5 @@
 <template>
-    <ImageModal ref="imageModal" :image="selectedImage" />
+    <ImageModal ref="imageModal" :image="selectedImage" :next="gotoNextImage" :prev="gotoPrevImage" />
     <div class="gallery-container">
         <div class="gallery-item" v-for="(image, index) in galleryImages" :key="index">
             <v-lazy-image :src="image" alt="random image" @click="openModal(image)" />
@@ -25,6 +25,7 @@
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
+    cursor: zoom-in;
 }
 
 .gallery-item>img {
@@ -73,9 +74,22 @@ export default {
             this.selectedImage = image;
             this.$refs.imageModal.toggleModal();
         },
-    },
-    mounted() {
-        console.log(this.images);
+        gotoNextImage() {
+            const index = this.galleryImages.indexOf(this.selectedImage);
+            if (index === this.galleryImages.length - 1) {
+                this.selectedImage = this.galleryImages[0];
+            } else {
+                this.selectedImage = this.galleryImages[index + 1];
+            }
+        },
+        gotoPrevImage() {
+            const index = this.galleryImages.indexOf(this.selectedImage);
+            if (index === 0) {
+                this.selectedImage = this.galleryImages[this.galleryImages.length - 1];
+            } else {
+                this.selectedImage = this.galleryImages[index - 1];
+            }
+        },
     },
 }
 </script>
