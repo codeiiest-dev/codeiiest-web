@@ -1,7 +1,7 @@
 <template>
     <ImageModal ref="imageModal" :image="selectedImage" />
     <div class="gallery-container">
-        <div class="gallery-item" v-for="(image, index) in images" :key="index">
+        <div class="gallery-item" v-for="(image, index) in galleryImages" :key="index">
             <v-lazy-image :src="image" alt="random image" @click="openModal(image)" />
         </div>
     </div>
@@ -54,6 +54,7 @@
 <script>
 import VLazyImage from "v-lazy-image";
 import ImageModal from "./ImageModal.vue";
+import { galleryImages } from "~/logic"
 
 export default {
     name: 'Gallery',
@@ -63,25 +64,17 @@ export default {
     },
     data() {
         return {
-            images: [],
+            galleryImages,
             selectedImage: '',
         }
     },
     methods: {
-        getGalleryImages() {
-            const images = import.meta.glob('../../public/gallery/*.*')
-            for (const path in images) {
-                this.images.push(path.replace('../../public', ''));
-            }
-        },
-
         openModal(image) {
             this.selectedImage = image;
             this.$refs.imageModal.toggleModal();
         },
     },
     mounted() {
-        this.getGalleryImages();
         console.log(this.images);
     },
 }
